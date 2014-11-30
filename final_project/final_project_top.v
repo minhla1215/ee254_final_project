@@ -19,12 +19,13 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module final_project_top(
+		MemOE, MemWR, RamCS, FlashCS, QuadSpiFlashCS, // Disable the three memory chips
 		ClkPort,                           // the 100 MHz incoming clock signal
 		
 		BtnL, BtnU, BtnD, BtnR,            // the Left, Up, Down, and the Right buttons BtnL, BtnR,
 		BtnC,                              // the center button (this is our reset in most of our designs)
-		Ld7, Ld6, Ld5, Ld4, Ld3, // 8 LEDs
-		LCD_data, LCD_e, LCD_rs, LCD_rw, LCD_bl,
+		Sw0,
+		Ld4, Ld3, Ld2, Ld1, Ld0, 			// 5 LEDs
 		An3, An2, An1, An0,			       // 4 anodes
 		Ca, Cb, Cc, Cd, Ce, Cf, Cg,        // 7 cathodes
 		Dp                                 // Dot Point Cathode on SSDs
@@ -36,15 +37,23 @@ module final_project_top(
 		input		ClkPort;	
 		// Project Specific Inputs
 		input		BtnL, BtnU, BtnR, BtnD, BtnC;	
+		input 	Sw0;
 		
+		
+
+		/*  OUTPUTS */
+		// Control signals on Memory chips 	(to disable them)
+		output 	MemOE, MemWR, RamCS, FlashCS, QuadSpiFlashCS;
+		// Project Specific Outputs
 		// LEDs
-		output 	Ld3, Ld4, Ld5, Ld6, Ld7;
+		output 	Ld0, Ld1, Ld2, Ld3, Ld4;
 		// SSD Outputs
 		output 	Cg, Cf, Ce, Cd, Cc, Cb, Ca, Dp;
-		output 	An0, An1, An2, An3;	
-		// LCD outputs
-		output [7:0] LCD_data;
-		output LCD_e, LCD_rs, LCD_rw, LCD_bl;
+		output 	An0, An1, An2, An3;
+		// SSD (Seven Segment Display)
+		reg [3:0]	SSD;
+		wire [3:0]	SSD3, SSD2, SSD1, SSD0;
+		reg [7:0]  	SSD_CATHODES;
 		
 		/*  LOCAL SIGNALS */
 		wire		Reset, ClkPort;
@@ -60,24 +69,16 @@ module final_project_top(
 		wire q_Initial, q_Check, q_P1_Win, q_P2_Win, q_Draw;
 		reg [4:0] state;
 		assign {q_Draw, q_P2_Win, q_P1_Win, q_Check, q_Initial} = state;
-		reg [3:0]	SSD;
 		
 		
-		wire     [3:0]	SSD3, SSD2, SSD1, SSD0; // ****** TODO  in Part 2 ******  reg or wire?
-		reg     [7:0]  SSD_CATHODES; // ****** TODO  in Part 2 ******  reg or wire?
-		
-		//--------------------LCD----------------------
-		wire [7:0]  data1, data2, data3, data4, data5, data6, data7, data8,
-				   data9, data10, data11, data12, data13, data14, data15, data16,
-					data17, data18, data19, data20, data21, data22, data23, data24,
-					data25, data26, data27, data28, data29, data30, data31, data32;	
-	
-		assign {MemOE, MemWR, RamCS, FlashCS, QuadSpiFlashCS} = 5'b11111;
+
+
+	//------------	
+	// Disable the three memories so that they do not interfere with the rest of the design.
+	assign {MemOE, MemWR, RamCS, FlashCS, QuadSpiFlashCS} = 5'b11111;
 	
 	//------------THE CLOCK-----------
 	BUFGP BUFGP1 (board_clk, ClkPort); 	
-	
-	assign Reset = BtnU;
 	
 	always @(posedge board_clk, posedge Reset) 	
     begin							
@@ -89,7 +90,8 @@ module final_project_top(
 	assign	sys_clk = DIV_CLK[25];
 	
 	//INPUT INTO STATE MACHINE
-	assign {Left, Right, Start, Reset, Enter} = {BtnL, BtnR, BtnU, BtnD, BtnC};
+	assign {Left, Right, Start, Reset, Enter} = {BtnL, BtnR, BtnD, BtnU, BtnC};
+	assign player = Sw0;
 	
 	//-----------------MODULE---------------
 	final_project fp(
@@ -109,5 +111,61 @@ module final_project_top(
 	.p2Win(p2Win),
 	.draw(draw)
 	);
+	
+	
+	//------------FGA MODULE--------------
+	
+	
+	
+	//------------PLAYER DISPLAY----------
+	assign {Ld4,Ld3, Ld2, Ld1, Ld0} = {BtnL, BtnR, BtnD, BtnU, BtnC}; 
+	assign SSD0 = player;
+	assign SSD1 = draw;
+	assign SSD2 = p2Win;
+	assign SSD3 = p1Win;
+	
+	assign ssdscan_clk = DIV_CLK[19:18];
+	assign An0	= !(~(ssdscan_clk[1]) && ~(ssdscan_clk[0]));  // when ssdscan_clk = 00
+	assign An1	= !(~(ssdscan_clk[1]) &&  (ssdscan_clk[0]));  // when ssdscan_clk = 01
+	assign An2	=  !((ssdscan_clk[1]) && ~(ssdscan_clk[0]));  // when ssdscan_clk = 10
+	assign An3	=  !((ssdscan_clk[1]) &&  (ssdscan_clk[0]));  // when ssdscan_clk = 11
+	
+	always @ (ssdscan_clk, SSD0, SSD1, SSD2, SSD3)
+	begin : SSD_SCAN_OUT
+		case (ssdscan_clk) 
+				  2'b00: SSD = SSD0;
+				  2'b01: SSD = SSD1;
+				  2'b10: SSD = SSD2;
+				  2'b11: SSD = SSD3;
+		endcase 
+	end
+	
+	// Following is Hex-to-SSD conversion
+	always @ (SSD) 
+	begin : HEX_TO_SSD
+		case (SSD) // in this solution file the dot points are made to glow by making Dp = 0
+		    //                                                                abcdefg,Dp
+			4'b0000: SSD_CATHODES = 8'b00000010; // 0
+			4'b0001: SSD_CATHODES = 8'b10011110; // 1
+			4'b0010: SSD_CATHODES = 8'b00100100; // 2
+			4'b0011: SSD_CATHODES = 8'b00001100; // 3
+			4'b0100: SSD_CATHODES = 8'b10011000; // 4
+			4'b0101: SSD_CATHODES = 8'b01001000; // 5
+			4'b0110: SSD_CATHODES = 8'b01000000; // 6
+			4'b0111: SSD_CATHODES = 8'b00011110; // 7
+			4'b1000: SSD_CATHODES = 8'b00000000; // 8
+			4'b1001: SSD_CATHODES = 8'b00001000; // 9
+			4'b1010: SSD_CATHODES = 8'b00010000; // A
+			4'b1011: SSD_CATHODES = 8'b11000000; // B
+			4'b1100: SSD_CATHODES = 8'b01100010; // C
+			4'b1101: SSD_CATHODES = 8'b10000100; // D
+			4'b1110: SSD_CATHODES = 8'b01100000; // E
+			4'b1111: SSD_CATHODES = 8'b01110000; // F    
+			default: SSD_CATHODES = 8'bXXXXXXXX; // default is not needed as we covered all cases
+		endcase
+	end	
+	
+	// reg [7:0]  SSD_CATHODES;
+	assign {Ca, Cb, Cc, Cd, Ce, Cf, Cg, Dp} = {SSD_CATHODES};
 	
 endmodule

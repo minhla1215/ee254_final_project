@@ -116,29 +116,24 @@ Parsing module <final_project_top>.
 =========================================================================
 
 Elaborating module <final_project_top>.
-WARNING:HDLCompiler:1127 - "A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 62: Assignment to q_Initial ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 75: Assignment to QuadSpiFlashCS ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 71: Assignment to q_Initial ignored, since the identifier is never used
 
 Elaborating module <BUFGP>.
 
 Elaborating module <final_project>.
-WARNING:HDLCompiler:413 - "A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 72: Result of 32-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 78: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 79: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 86: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:1511 - "A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 34: Mix of blocking and non-blocking assignments to variable <gameOver> is not a recommended coding practice.
 WARNING:HDLCompiler:1511 - "A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 29: Mix of blocking and non-blocking assignments to variable <mapBoard> is not a recommended coding practice.
-WARNING:HDLCompiler:413 - "A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 197: Result of 79-bit expression is truncated to fit in 49-bit target.
-WARNING:HDLCompiler:413 - "A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 198: Result of 63-bit expression is truncated to fit in 49-bit target.
-WARNING:HDLCompiler:413 - "A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 199: Result of 63-bit expression is truncated to fit in 49-bit target.
-WARNING:HDLCompiler:413 - "A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 200: Result of 63-bit expression is truncated to fit in 49-bit target.
-WARNING:HDLCompiler:1127 - "A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 102: Assignment to q_Initial ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 103: Assignment to q_Check ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 104: Assignment to q_P1_Win ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 105: Assignment to q_P2_Win ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 106: Assignment to q_Draw ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 108: Assignment to p1Win ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 109: Assignment to p2Win ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 110: Assignment to draw ignored, since the identifier is never used
-WARNING:HDLCompiler:634 - "A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 56: Net <player> does not have a driver.
-WARNING:Xst:2972 - "a:/documents/github/ee254_final_project/final_project/final_project_top.v" line 95. All outputs of instance <fp> of block <final_project> are unconnected in block <final_project_top>. Underlying logic will be removed.
+WARNING:HDLCompiler:413 - "A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 203: Result of 79-bit expression is truncated to fit in 49-bit target.
+WARNING:HDLCompiler:413 - "A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 204: Result of 63-bit expression is truncated to fit in 49-bit target.
+WARNING:HDLCompiler:413 - "A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 205: Result of 63-bit expression is truncated to fit in 49-bit target.
+WARNING:HDLCompiler:413 - "A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 206: Result of 63-bit expression is truncated to fit in 49-bit target.
+WARNING:HDLCompiler:1127 - "A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 104: Assignment to q_Initial ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 105: Assignment to q_Check ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 106: Assignment to q_P1_Win ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 107: Assignment to q_P2_Win ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 108: Assignment to q_Draw ignored, since the identifier is never used
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -146,52 +141,153 @@ WARNING:Xst:2972 - "a:/documents/github/ee254_final_project/final_project/final_
 
 Synthesizing Unit <final_project_top>.
     Related source file is "a:/documents/github/ee254_final_project/final_project/final_project_top.v".
-INFO:Xst:3210 - "a:/documents/github/ee254_final_project/final_project/final_project_top.v" line 95: Output port <q_Initial> of the instance <fp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "a:/documents/github/ee254_final_project/final_project/final_project_top.v" line 95: Output port <q_Check> of the instance <fp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "a:/documents/github/ee254_final_project/final_project/final_project_top.v" line 95: Output port <q_P1_Win> of the instance <fp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "a:/documents/github/ee254_final_project/final_project/final_project_top.v" line 95: Output port <q_P2_Win> of the instance <fp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "a:/documents/github/ee254_final_project/final_project/final_project_top.v" line 95: Output port <q_Draw> of the instance <fp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "a:/documents/github/ee254_final_project/final_project/final_project_top.v" line 95: Output port <p1Win> of the instance <fp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "a:/documents/github/ee254_final_project/final_project/final_project_top.v" line 95: Output port <p2Win> of the instance <fp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "a:/documents/github/ee254_final_project/final_project/final_project_top.v" line 95: Output port <draw> of the instance <fp> is unconnected or connected to loadless signal.
-WARNING:Xst:653 - Signal <player> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+INFO:Xst:3210 - "a:/documents/github/ee254_final_project/final_project/final_project_top.v" line 97: Output port <q_Initial> of the instance <fp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "a:/documents/github/ee254_final_project/final_project/final_project_top.v" line 97: Output port <q_Check> of the instance <fp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "a:/documents/github/ee254_final_project/final_project/final_project_top.v" line 97: Output port <q_P1_Win> of the instance <fp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "a:/documents/github/ee254_final_project/final_project/final_project_top.v" line 97: Output port <q_P2_Win> of the instance <fp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "a:/documents/github/ee254_final_project/final_project/final_project_top.v" line 97: Output port <q_Draw> of the instance <fp> is unconnected or connected to loadless signal.
+    Found 27-bit register for signal <DIV_CLK>.
+    Found 27-bit adder for signal <DIV_CLK[26]_GND_1_o_add_2_OUT> created at line 88.
+    Found 16x8-bit Read Only RAM for signal <SSD_CATHODES>
+    Found 1-bit 4-to-1 multiplexer for signal <SSD<0>> created at line 146.
     Summary:
-	no macro.
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  27 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
 Unit <final_project_top> synthesized.
+
+Synthesizing Unit <final_project>.
+    Related source file is "a:/documents/github/ee254_final_project/final_project/final_project.v".
+    Found 1-bit register for signal <p1Win>.
+    Found 1-bit register for signal <p2Win>.
+    Found 1-bit register for signal <draw>.
+    Found 4-bit register for signal <location>.
+    Found 18-bit register for signal <n0161[17:0]>.
+    Found 5-bit register for signal <state>.
+    Found 4-bit adder for signal <location[3]_GND_3_o_add_7_OUT> created at line 86.
+    Found 4-bit subtractor for signal <GND_3_o_GND_3_o_sub_4_OUT<3:0>> created at line 79.
+    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_32_o> created at line 98
+    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_33_o> created at line 98
+    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_39_o> created at line 98
+    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_40_o> created at line 98
+    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_46_o> created at line 98
+    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_47_o> created at line 98
+    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_53_o> created at line 115
+    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_54_o> created at line 115
+    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_60_o> created at line 115
+    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_61_o> created at line 115
+    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_67_o> created at line 115
+    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_68_o> created at line 115
+    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_74_o> created at line 129
+    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_75_o> created at line 129
+    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_81_o> created at line 143
+    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_82_o> created at line 143
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  30 D-type flip-flop(s).
+	inferred  16 Comparator(s).
+	inferred  75 Multiplexer(s).
+Unit <final_project> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
-Found no macro
+Macro Statistics
+# RAMs                                                 : 1
+ 16x8-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 2
+ 27-bit adder                                          : 1
+ 4-bit addsub                                          : 1
+# Registers                                            : 7
+ 1-bit register                                        : 3
+ 18-bit register                                       : 1
+ 27-bit register                                       : 1
+ 4-bit register                                        : 1
+ 5-bit register                                        : 1
+# Comparators                                          : 16
+ 2-bit comparator equal                                : 16
+# Multiplexers                                         : 76
+ 1-bit 2-to-1 multiplexer                              : 38
+ 1-bit 4-to-1 multiplexer                              : 1
+ 18-bit 2-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 18
+ 4-bit 2-to-1 multiplexer                              : 6
+ 5-bit 2-to-1 multiplexer                              : 12
+
 =========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 
 =========================================================================
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
 
+Synthesizing (advanced) Unit <final_project_top>.
+The following registers are absorbed into counter <DIV_CLK>: 1 register on signal <DIV_CLK>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_SSD_CATHODES> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <("000",SSD)>   |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <Dp>            |          |
+    -----------------------------------------------------------------------
+Unit <final_project_top> synthesized (advanced).
+
 =========================================================================
 Advanced HDL Synthesis Report
 
-Found no macro
+Macro Statistics
+# RAMs                                                 : 1
+ 16x8-bit single-port distributed Read Only RAM        : 1
+# Adders/Subtractors                                   : 1
+ 4-bit addsub                                          : 1
+# Counters                                             : 1
+ 27-bit up counter                                     : 1
+# Registers                                            : 30
+ Flip-Flops                                            : 30
+# Comparators                                          : 16
+ 2-bit comparator equal                                : 16
+# Multiplexers                                         : 76
+ 1-bit 2-to-1 multiplexer                              : 38
+ 1-bit 4-to-1 multiplexer                              : 1
+ 18-bit 2-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 18
+ 4-bit 2-to-1 multiplexer                              : 6
+ 5-bit 2-to-1 multiplexer                              : 12
+
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:2677 - Node <DIV_CLK_26> of sequential type is unconnected in block <final_project_top>.
 
 Optimizing unit <final_project_top> ...
 
+Optimizing unit <final_project> ...
+
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block final_project_top, actual ratio is 0.
+Found area constraint ratio of 100 (+ 5) on block final_project_top, actual ratio is 1.
+FlipFlop fp/location_0 has been replicated 1 time(s)
+FlipFlop fp/location_1 has been replicated 1 time(s)
+FlipFlop fp/location_2 has been replicated 2 time(s)
+FlipFlop fp/location_3 has been replicated 2 time(s)
 
 Final Macro Processing ...
 
 =========================================================================
 Final Register Report
 
-Found no macro
+Macro Statistics
+# Registers                                            : 62
+ Flip-Flops                                            : 62
+
 =========================================================================
 
 =========================================================================
@@ -213,8 +309,29 @@ Top Level Output File Name         : final_project_top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# Clock Buffers                    : 1
+# BELS                             : 186
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 25
+#      LUT2                        : 8
+#      LUT3                        : 2
+#      LUT4                        : 3
+#      LUT5                        : 12
+#      LUT6                        : 77
+#      MUXCY                       : 25
+#      MUXF7                       : 5
+#      VCC                         : 1
+#      XORCY                       : 26
+# FlipFlops/Latches                : 62
+#      FDC                         : 33
+#      FDCE                        : 28
+#      FDP                         : 1
+# Clock Buffers                    : 2
+#      BUFG                        : 1
 #      BUFGP                       : 1
+# IO Buffers                       : 28
+#      IBUF                        : 6
+#      OBUF                        : 22
 
 Device utilization summary:
 ---------------------------
@@ -223,20 +340,23 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
+ Number of Slice Registers:              62  out of  18224     0%  
+ Number of Slice LUTs:                  128  out of   9112     1%  
+    Number used as Logic:               128  out of   9112     1%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:      0
-   Number with an unused Flip Flop:       0  out of      0         
-   Number with an unused LUT:             0  out of      0         
-   Number of fully used LUT-FF pairs:     0  out of      0         
-   Number of unique control sets:         0
+ Number of LUT Flip Flop pairs used:    133
+   Number with an unused Flip Flop:      71  out of    133    53%  
+   Number with an unused LUT:             5  out of    133     3%  
+   Number of fully used LUT-FF pairs:    57  out of    133    42%  
+   Number of unique control sets:         4
 
 IO Utilization: 
- Number of IOs:                          35
- Number of bonded IOBs:                   1  out of    232     0%  
+ Number of IOs:                          29
+ Number of bonded IOBs:                  29  out of    232    12%  
 
 Specific Feature Utilization:
- Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
 
 ---------------------------
 Partition Resource Summary:
@@ -256,7 +376,12 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
-No clock signals found in this design
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+ClkPort                            | BUFGP                  | 26    |
+DIV_CLK_25                         | BUFG                   | 36    |
+-----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -266,31 +391,224 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: No path found
-   Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: No path found
-   Maximum combinational path delay: No path found
+   Minimum period: 6.300ns (Maximum Frequency: 158.731MHz)
+   Minimum input arrival time before clock: 7.486ns
+   Maximum output required time after clock: 5.012ns
+   Maximum combinational path delay: 5.794ns
 
 Timing Details:
 ---------------
 All values displayed in nanoseconds (ns)
 
 =========================================================================
+Timing constraint: Default period analysis for Clock 'ClkPort'
+  Clock period: 2.142ns (frequency: 466.886MHz)
+  Total number of paths / destination ports: 351 / 26
+-------------------------------------------------------------------------
+Delay:               2.142ns (Levels of Logic = 27)
+  Source:            DIV_CLK_0 (FF)
+  Destination:       DIV_CLK_25 (FF)
+  Source Clock:      ClkPort rising
+  Destination Clock: ClkPort rising
+
+  Data Path: DIV_CLK_0 to DIV_CLK_25
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.447   0.579  DIV_CLK_0 (DIV_CLK_0)
+     INV:I->O              1   0.206   0.000  Mcount_DIV_CLK_lut<0>_INV_0 (Mcount_DIV_CLK_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcount_DIV_CLK_cy<0> (Mcount_DIV_CLK_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<1> (Mcount_DIV_CLK_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<2> (Mcount_DIV_CLK_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<3> (Mcount_DIV_CLK_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<4> (Mcount_DIV_CLK_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<5> (Mcount_DIV_CLK_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<6> (Mcount_DIV_CLK_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<7> (Mcount_DIV_CLK_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<8> (Mcount_DIV_CLK_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<9> (Mcount_DIV_CLK_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<10> (Mcount_DIV_CLK_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<11> (Mcount_DIV_CLK_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<12> (Mcount_DIV_CLK_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<13> (Mcount_DIV_CLK_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<14> (Mcount_DIV_CLK_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<15> (Mcount_DIV_CLK_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<16> (Mcount_DIV_CLK_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<17> (Mcount_DIV_CLK_cy<17>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<18> (Mcount_DIV_CLK_cy<18>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<19> (Mcount_DIV_CLK_cy<19>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<20> (Mcount_DIV_CLK_cy<20>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<21> (Mcount_DIV_CLK_cy<21>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<22> (Mcount_DIV_CLK_cy<22>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<23> (Mcount_DIV_CLK_cy<23>)
+     MUXCY:CI->O           0   0.019   0.000  Mcount_DIV_CLK_cy<24> (Mcount_DIV_CLK_cy<24>)
+     XORCY:CI->O           1   0.180   0.000  Mcount_DIV_CLK_xor<25> (Result<25>)
+     FDC:D                     0.102          DIV_CLK_25
+    ----------------------------------------
+    Total                      2.142ns (1.563ns logic, 0.579ns route)
+                                       (73.0% logic, 27.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DIV_CLK_25'
+  Clock period: 6.300ns (frequency: 158.731MHz)
+  Total number of paths / destination ports: 4928 / 64
+-------------------------------------------------------------------------
+Delay:               6.300ns (Levels of Logic = 6)
+  Source:            fp/location_2 (FF)
+  Destination:       fp/state_2 (FF)
+  Source Clock:      DIV_CLK_25 rising
+  Destination Clock: DIV_CLK_25 rising
+
+  Data Path: fp/location_2 to fp/state_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            14   0.447   1.186  fp/location_2 (fp/location_2)
+     LUT6:I3->O            6   0.205   1.109  fp/Mmux_GND_3_o_GND_3_o_mux_30_OUT121 (fp/GND_3_o_GND_3_o_mux_30_OUT<3>)
+     LUT6:I0->O            5   0.203   0.962  fp/Mmux_state[4]_state[4]_mux_65_OUT311 (fp/Mmux_state[4]_state[4]_mux_65_OUT31)
+     LUT6:I2->O            3   0.203   0.651  fp/state[4]_state[4]_select_108_OUT<2>6 (fp/state[4]_state[4]_select_108_OUT<2>8)
+     LUT5:I4->O            1   0.205   0.000  fp/state[4]_state[4]_select_108_OUT<2>12_SW1_G (N26)
+     MUXF7:I1->O           1   0.140   0.684  fp/state[4]_state[4]_select_108_OUT<2>12_SW1 (N17)
+     LUT6:I4->O            1   0.203   0.000  fp/state[4]_state[4]_select_108_OUT<2>13 (fp/state[4]_state[4]_select_108_OUT<2>)
+     FDC:D                     0.102          fp/state_2
+    ----------------------------------------
+    Total                      6.300ns (1.708ns logic, 4.592ns route)
+                                       (27.1% logic, 72.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ClkPort'
+  Total number of paths / destination ports: 26 / 26
+-------------------------------------------------------------------------
+Offset:              3.285ns (Levels of Logic = 1)
+  Source:            BtnU (PAD)
+  Destination:       DIV_CLK_0 (FF)
+  Destination Clock: ClkPort rising
+
+  Data Path: BtnU to DIV_CLK_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            63   1.222   1.633  BtnU_IBUF (Ld1_OBUF)
+     FDC:CLR                   0.430          DIV_CLK_0
+    ----------------------------------------
+    Total                      3.285ns (1.652ns logic, 1.633ns route)
+                                       (50.3% logic, 49.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'DIV_CLK_25'
+  Total number of paths / destination ports: 1031 / 97
+-------------------------------------------------------------------------
+Offset:              7.486ns (Levels of Logic = 6)
+  Source:            Sw0 (PAD)
+  Destination:       fp/state_3 (FF)
+  Destination Clock: DIV_CLK_25 rising
+
+  Data Path: Sw0 to fp/state_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            21   1.222   1.478  Sw0_IBUF (Sw0_IBUF)
+     LUT6:I0->O           11   0.203   1.227  fp/Mmux_GND_3_o_GND_3_o_mux_30_OUT91 (fp/GND_3_o_GND_3_o_mux_30_OUT<17>)
+     LUT6:I1->O           12   0.203   0.909  fp/GND_3_o_GND_3_o_AND_37_o1 (fp/GND_3_o_GND_3_o_AND_37_o)
+     LUT5:I4->O            2   0.205   0.721  fp/state[4]_state[4]_select_108_OUT<3>7 (fp/state[4]_state[4]_select_108_OUT<3>7)
+     LUT6:I4->O            1   0.203   0.808  fp/state[4]_state[4]_select_108_OUT<3>11_SW0 (N13)
+     LUT6:I3->O            1   0.205   0.000  fp/state[4]_state[4]_select_108_OUT<3>12 (fp/state[4]_state[4]_select_108_OUT<3>)
+     FDC:D                     0.102          fp/state_3
+    ----------------------------------------
+    Total                      7.486ns (2.343ns logic, 5.143ns route)
+                                       (31.3% logic, 68.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ClkPort'
+  Total number of paths / destination ports: 16 / 8
+-------------------------------------------------------------------------
+Offset:              5.012ns (Levels of Logic = 2)
+  Source:            DIV_CLK_18 (FF)
+  Destination:       Ca (PAD)
+  Source Clock:      ClkPort rising
+
+  Data Path: DIV_CLK_18 to Ca
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              6   0.447   1.109  DIV_CLK_18 (DIV_CLK_18)
+     LUT6:I0->O            4   0.203   0.683  Mmux_SSD<0>11 (Ca_OBUF)
+     OBUF:I->O                 2.571          Ca_OBUF (Ca)
+    ----------------------------------------
+    Total                      5.012ns (3.221ns logic, 1.791ns route)
+                                       (64.3% logic, 35.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'DIV_CLK_25'
+  Total number of paths / destination ports: 12 / 4
+-------------------------------------------------------------------------
+Offset:              4.768ns (Levels of Logic = 2)
+  Source:            fp/draw (FF)
+  Destination:       Ca (PAD)
+  Source Clock:      DIV_CLK_25 rising
+
+  Data Path: fp/draw to Ca
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.447   0.864  fp/draw (fp/draw)
+     LUT6:I2->O            4   0.203   0.683  Mmux_SSD<0>11 (Ca_OBUF)
+     OBUF:I->O                 2.571          Ca_OBUF (Ca)
+    ----------------------------------------
+    Total                      4.768ns (3.221ns logic, 1.547ns route)
+                                       (67.6% logic, 32.4% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 9 / 9
+-------------------------------------------------------------------------
+Delay:               5.794ns (Levels of Logic = 3)
+  Source:            Sw0 (PAD)
+  Destination:       Ca (PAD)
+
+  Data Path: Sw0 to Ca
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            21   1.222   1.114  Sw0_IBUF (Sw0_IBUF)
+     LUT6:I5->O            4   0.205   0.683  Mmux_SSD<0>11 (Ca_OBUF)
+     OBUF:I->O                 2.571          Ca_OBUF (Ca)
+    ----------------------------------------
+    Total                      5.794ns (3.998ns logic, 1.796ns route)
+                                       (69.0% logic, 31.0% route)
+
+=========================================================================
 
 Cross Clock Domains Report:
 --------------------------
 
+Clock to Setup on destination clock ClkPort
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+ClkPort        |    2.142|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock DIV_CLK_25
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+DIV_CLK_25     |    6.300|         |         |         |
+---------------+---------+---------+---------+---------+
+
 =========================================================================
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 3.94 secs
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.68 secs
  
 --> 
 
-Total memory usage is 244364 kilobytes
+Total memory usage is 246028 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   20 (   0 filtered)
-Number of infos    :    8 (   0 filtered)
+Number of warnings :   15 (   0 filtered)
+Number of infos    :    7 (   0 filtered)
 

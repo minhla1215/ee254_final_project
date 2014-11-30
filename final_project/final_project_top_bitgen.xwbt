@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=A:\Documents\Github\ee254_final_project\final_project\final_project_top.ncd
+OUTFILE=A:\Documents\Github\ee254_final_project\final_project\final_project_top.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=A:\Documents\Github\ee254_final_project\final_project
+LICENSE=WebPack
+USER_INFO=210799598_0_0_252
