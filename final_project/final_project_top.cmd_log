@@ -1,1 +1,4 @@
 xst -intstyle ise -ifn "C:/Xilinx_projects/final_project/final_project_top.xst" -ofn "C:/Xilinx_projects/final_project/final_project_top.syr" 
+xst -intstyle ise -ifn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.xst" -ofn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.syr" 
+xst -intstyle ise -ifn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.xst" -ofn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.syr" 
+xst -intstyle ise -ifn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.xst" -ofn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.syr" 

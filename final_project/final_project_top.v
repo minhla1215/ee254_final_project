@@ -45,7 +45,6 @@ module final_project_top(
 		// LCD outputs
 		output [7:0] LCD_data;
 		output LCD_e, LCD_rs, LCD_rw, LCD_bl;
-		output mapBoard;
 		
 		/*  LOCAL SIGNALS */
 		wire		Reset, ClkPort;
@@ -53,7 +52,7 @@ module final_project_top(
 		wire [1:0] 	ssdscan_clk;
 		reg [26:0]	DIV_CLK;
 		wire Left, Right;
-		wire Reset, Enter;
+		wire Enter;
 		wire player;
 		wire p1Win, p2Win, draw;
 	

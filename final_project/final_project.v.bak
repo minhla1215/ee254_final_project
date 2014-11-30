@@ -1,0 +1,180 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    17:21:06 11/12/2014 
+// Design Name: 
+// Module Name:    final_project 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+module final_project(Clk, Left, Right, Start, Reset, Enter, q_Initial, q_Check, q_P1_Win, q_P2_Win, q_Draw, player, p1Win, p2Win, draw);
+	input Clk, Left, Right, Start, Reset, Enter;
+	input player;
+	output q_Initial, q_Check, q_P1_Win, q_P2_Win, q_Draw;
+	output reg p1Win, p2Win, draw;
+	
+	reg [1:0] mapBoard [8:0];
+	
+	reg [4:0] state;
+	assign {q_Draw, q_P2_Win, q_P1_Win, q_Check, q_Initial} = state;
+	
+	reg gameOver, flag;
+	integer i;
+	reg [3:0] location;
+	
+	localparam
+	INITIAL = 5'b00001,
+	CHECK   = 5'b00010,
+	P1WIN   = 5'b00100,
+	P2WIN   = 5'b01000,
+	DRAW    = 5'b10000;
+	
+	always @ (posedge Clk, posedge Reset)
+	begin
+		if(Reset)
+			begin
+				state <= INITIAL;
+				gameOver = 1'b0;
+				Reset <= 1'b0;
+			end
+		else
+			begin
+				case (state)
+				INITIAL:
+					begin
+						if(Start)
+							state <= CHECK;
+					end
+				CHECK:
+					begin
+						if(Left)
+							begin
+								location <= location + 1;
+								if(location == 4'b1000)
+									location <= 4'b0000;
+							end
+						if(Right)
+							begin
+								location <= location - 1;
+								if(location == 4'b0000)
+									location <= 4'b1000;
+							end
+						if(Enter)
+							begin
+								if(!player) // player=0 is player1, player=1 is player2
+									mapBoard[location] = 1;
+								else
+									mapBoard[location] = 2;
+								
+								gameOver = 1'b0;
+								for(i = 0; i < 3; i = i + 1)
+									begin
+										if(mapBoard[i * 3 + 0] == mapBoard[i * 3 + 1] && mapBoard[i * 3 + 1] == mapBoard[i * 3 + 2])
+											begin
+												if(mapBoard[i * 3 + 0] == 1)
+													begin
+														gameOver = 1'b1;
+														state <= P1WIN;
+													end
+												if(mapBoard[i * 3 + 0] == 2)
+													begin
+														gameOver = 1'b1;
+														state <= P2WIN;
+													end
+											end
+									end
+									
+								for(i = 0; i < 3; i = i + 1)
+									begin
+										if(mapBoard[0 + i] == mapBoard[3 + i] && mapBoard[3 + i] == mapBoard[6 + i])
+											begin
+												if(mapBoard[i] == 1)
+													begin
+														gameOver = 1'b1;
+														state <= P1WIN;
+													end
+												if(mapBoard[i] == 2)
+													begin
+														gameOver = 1'b1;
+														state <= P2WIN;
+													end
+											end
+									end
+								if(mapBoard[0] == mapBoard[4] && mapBoard[4] == mapBoard[8])
+									begin
+										if(mapBoard[0] == 1)
+											begin
+												gameOver = 1'b1;
+												state <= P1WIN;
+											end
+										if(mapBoard[0] == 2)
+											begin
+												gameOver = 1'b1;
+												state <= P2WIN;
+											end
+									end
+									
+								if(mapBoard[2] == mapBoard[4] && mapBoard[4] == mapBoard[6])
+									begin
+										if(mapBoard[2] == 1)
+											begin
+												gameOver = 1'b1;
+												state <= P1WIN;
+											end
+										if(mapBoard[2] == 2)
+											begin
+												gameOver = 1'b1;
+												state <= P2WIN;
+											end
+									end
+									
+								flag = 0'b1;
+								for(i = 0; i < 9; i = i + 1)
+									begin
+										if(mapBoard[i] == 0)
+											flag = 0'b0;
+									end
+									
+								if(flag && !gameOver)
+									state <= DRAW;
+							end
+					end
+				P1WIN:
+					begin
+						p1Win <= 0'b1;
+						p2Win <= 0'b0;
+						draw  <= 0'b0;
+						if(Start)
+							state <= INITIAL;
+					end
+				P2WIN:
+					begin
+						p1Win <= 0'b0;
+						p2Win <= 0'b1;
+						draw  <= 0'b0;
+						if(Start)
+							state <= INITIAL;
+					end
+				DRAW:
+					begin
+						p1Win <= 0'b0;
+						p2Win <= 0'b0;
+						draw  <= 0'b1;
+						if(Start)
+							state <= INITIAL;
+					end
+				endcase
+			end
+	end
+endmodule

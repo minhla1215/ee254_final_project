@@ -4,15 +4,15 @@
 // Company: 
 // Engineer:
 //
-// Create Date:   18:35:58 11/12/2014
-// Design Name:   final_project
-// Module Name:   C:/Xilinx_projects/final_project/final_project_test.v
-// Project Name:  final_project
+// Create Date:   18:45:05 09/24/2014
+// Design Name:   ee254_numlock_sm
+// Module Name:   C:/Documents and Settings/Administrator/Desktop/EE254/Xilinx Lab6 Number Lock/lab6_num_lock/ee254_numlock_sm_tb.v
+// Project Name:  lab6_num_lock
 // Target Device:  
 // Tool versions:  
 // Description: 
 //
-// Verilog Test Fixture created by ISE for module: final_project
+// Verilog Test Fixture created by ISE for module: ee254_numlock_sm
 //
 // Dependencies:
 // 
@@ -32,6 +32,8 @@ module final_project_test;
 	reg Reset;
 	reg Enter;
 	reg player;
+
+	// Outputs
 	wire q_Initial;
 	wire q_Check;
 	wire q_P1_Win;
@@ -40,12 +42,13 @@ module final_project_test;
 	wire p1Win;
 	wire p2Win;
 	wire draw;
-	reg location;
+	
 	reg [6*8:0] state_string; // 6-character string for symbolic display of state
+
 
 	// Instantiate the Unit Under Test (UUT)
 	final_project uut (
-	.Clk(sys_clk), 
+	.Clk(Clk), 
 	.Left(Left), 
 	.Right(Right),
 	.Start(Start),
@@ -62,86 +65,76 @@ module final_project_test;
 	.draw(draw)
 	);
 
-	initial 
-		  begin
-			Clk = 0; // Initialize clock
-		  end
-		
-		always  begin #10; Clk = ~ Clk; end
-		
 
 	initial begin
 		// Initialize Inputs
 		Clk = 0;
-		location = 4'b0000;
 		player = 0;
 		Left = 0;
 		Right = 0;
 		Start = 0;
-		Reset = 0;
+		Reset = 1;
 		Enter = 0;
-
+		
+		#100;
+		Reset = 0;
+		
 		// Wait 100 ns for global reset to finish
 		#100;
-      Reset = 1;
-
-		/* XO-
-			X--
-			X-- PLAYER 1 WINS
-		*/
-		#20;
+        
+		#50;
 		Start = 1;
-		#20;
+		#50;
 		Start = 0;
 		Enter = 1;
+		#50;
+		Right = 1;
+		Enter = 0;
+		#50;
+		Right = 0;
+		Enter = 1;
+		#50;
+		Right = 1;
+		Enter = 0;
+		#50;
+		Enter = 1;
+		Right = 0;
+		#50;
+		Enter = 0;
 		
-		#20;
+		
+		
+		// SECOND CASE
+		#100;
+		Reset = 1;
+		#100;
+		Reset = 0;
+		#100;
+		Start = 1;
 		player = 1;
-		Right = 1;
-		
-		#20;
-		Right = 0;
+		#50;
+		Start = 0;
 		Enter = 1;
-		
-		#20;
-		Enter = 0;
-		player = 0;
-		Right = 1;
-		
-		#20;
-		Right = 1;
-		
-		#20;
-		Enter = 1;
-		
-		#20;
+		#50;
 		Enter = 0;
 		Right = 1;
-		
-		#20;
-		#20;
-		#20;
+		#150;
 		Right = 0;
 		Enter = 1;
-		
+		#50;
+		Enter = 0;
+		Right = 1;
+		#150;
+		Enter = 1;
+		Right = 0;
+		#50;
+		Enter = 0;
 		
 		
 		// Add stimulus here
 
 	end
-      
-		always @(*)
-		begin
-			case ({q_Initial, q_Check, q_P1_Win, q_P2_Win, q_Draw})    // Note the concatenation operator {}
-				5'b00001: state_string = "q_Initial ";  // ****** TODO ******
-				5'b00010: state_string = "q_Check ";       // Fill-in the three lines
-				5'b00100: state_string = "q_P1_WIN"; 
-				5'b01000: state_string = "q_P2_WIN"; 
-				5'b10000: state_string = "q_Draw"; 
-
-
-				endcase
-		end
-		
+    
+	always #25 begin Clk = ~Clk; end
 endmodule
 
