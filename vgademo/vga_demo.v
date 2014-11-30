@@ -55,12 +55,12 @@ begin : CLOCK_DIVIDER
 	always @(posedge DIV_CLK[21])
 	begin
 		if(reset)
-			position<=240;
-		else if(btnD && ~btnU)
-			position<=position+2;
-		else if(btnU && ~btnD)
-			position<=position-2;	
-		end
+			position <= 240;
+		else if (btnD && ~btnU)
+			position <= position + 2;
+		else if (btnU && ~btnD)
+			position <= position - 2;	
+	end
 
 	wire R = CounterY >= (position - 10) && 
 		CounterY <= (position + 10) && 
