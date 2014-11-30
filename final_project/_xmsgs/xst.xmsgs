@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="HDLCompiler" num="711" delta="new" >"C:\Xilinx_projects\final_project\final_project.v" Line 26: Found more than one declaration of port &lt;<arg fmt="%s" index="1">mapBoard</arg>&gt;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1490" delta="new" >"C:\Xilinx_projects\final_project\final_project.v" Line 79: Loop valiable declaration is not allowed in this mode of verilog
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1490" delta="new" >"C:\Xilinx_projects\final_project\final_project.v" Line 96: Loop valiable declaration is not allowed in this mode of verilog
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1490" delta="new" >"C:\Xilinx_projects\final_project\final_project.v" Line 141: Loop valiable declaration is not allowed in this mode of verilog
+</msg>
+
+<msg type="error" file="HDLCompiler" num="715" delta="new" >"C:\Xilinx_projects\final_project\final_project.v" Line 24: Port <arg fmt="%s" index="1">q_Initial</arg> is not defined
+</msg>
+
+<msg type="error" file="HDLCompiler" num="715" delta="new" >"C:\Xilinx_projects\final_project\final_project.v" Line 25: Port <arg fmt="%s" index="1">p1Win</arg> is not defined
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1660" delta="new" >"C:\Xilinx_projects\final_project\final_project.v" Line 45: Procedural assignment to a non-register <arg fmt="%s" index="1">location</arg> is not permitted, left-hand side should be reg/integer/time/genvar
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1660" delta="new" >"C:\Xilinx_projects\final_project\final_project.v" Line 45: Procedural assignment to a non-register <arg fmt="%s" index="1">location</arg> is not permitted, left-hand side should be reg/integer/time/genvar
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1660" delta="new" >"C:\Xilinx_projects\final_project\final_project.v" Line 46: Procedural assignment to a non-register <arg fmt="%s" index="1">player</arg> is not permitted, left-hand side should be reg/integer/time/genvar
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1660" delta="new" >"C:\Xilinx_projects\final_project\final_project.v" Line 46: Procedural assignment to a non-register <arg fmt="%s" index="1">player</arg> is not permitted, left-hand side should be reg/integer/time/genvar
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1660" delta="new" >"C:\Xilinx_projects\final_project\final_project.v" Line 47: Procedural assignment to a non-register <arg fmt="%s" index="1">gameOver</arg> is not permitted, left-hand side should be reg/integer/time/genvar
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1660" delta="new" >"C:\Xilinx_projects\final_project\final_project.v" Line 47: Procedural assignment to a non-register <arg fmt="%s" index="1">gameOver</arg> is not permitted, left-hand side should be reg/integer/time/genvar
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1660" delta="new" >"C:\Xilinx_projects\final_project\final_project.v" Line 61: Procedural assignment to a non-register <arg fmt="%s" index="1">location</arg> is not permitted, left-hand side should be reg/integer/time/genvar
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1660" delta="new" >"C:\Xilinx_projects\final_project\final_project.v" Line 61: Procedural assignment to a non-register <arg fmt="%s" index="1">location</arg> is not permitted, left-hand side should be reg/integer/time/genvar
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1660" delta="new" >"C:\Xilinx_projects\final_project\final_project.v" Line 63: Procedural assignment to a non-register <arg fmt="%s" index="1">location</arg> is not permitted, left-hand side should be reg/integer/time/genvar
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1660" delta="new" >"C:\Xilinx_projects\final_project\final_project.v" Line 63: Procedural assignment to a non-register <arg fmt="%s" index="1">location</arg> is not permitted, left-hand side should be reg/integer/time/genvar
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1660" delta="new" >"C:\Xilinx_projects\final_project\final_project.v" Line 67: Procedural assignment to a non-register <arg fmt="%s" index="1">location</arg> is not permitted, left-hand side should be reg/integer/time/genvar
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1660" delta="new" >"C:\Xilinx_projects\final_project\final_project.v" Line 67: Procedural assignment to a non-register <arg fmt="%s" index="1">location</arg> is not permitted, left-hand side should be reg/integer/time/genvar
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1660" delta="new" >"C:\Xilinx_projects\final_project\final_project.v" Line 69: Procedural assignment to a non-register <arg fmt="%s" index="1">location</arg> is not permitted, left-hand side should be reg/integer/time/genvar
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1660" delta="new" >"C:\Xilinx_projects\final_project\final_project.v" Line 69: Procedural assignment to a non-register <arg fmt="%s" index="1">location</arg> is not permitted, left-hand side should be reg/integer/time/genvar
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1660" delta="new" >"C:\Xilinx_projects\final_project\final_project.v" Line 74: Procedural assignment to a non-register <arg fmt="%s" index="1">mapBoard</arg> is not permitted, left-hand side should be reg/integer/time/genvar
+</msg>
+
+<msg type="error" file="HDLCompiler" num="271" delta="new" >"C:\Xilinx_projects\final_project\final_project.v" Line 74: Cannot index into non-array <arg fmt="%s" index="1">mapBoard</arg>
+</msg>
+
+</messages>
+
