@@ -1,2 +1,4 @@
+verilog work "hvsync_generator.v"
+verilog work "gridDisplay.v"
 verilog work "final_project.v"
 verilog work "final_project_top.v"

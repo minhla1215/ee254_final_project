@@ -55,12 +55,13 @@ end
 
 
 always @(posedge clk)
-   	if (reset)
-      		inDisplayArea<=0;
-   	else
-	   	inDisplayArea <= (CounterX < 640) && (CounterY < 480);
-	
-	assign vga_h_sync = ~vga_HS;
-	assign vga_v_sync = ~vga_VS;
-end
+	begin
+			if (reset)
+					inDisplayArea<=0;
+			else
+				inDisplayArea <= (CounterX < 640) && (CounterY < 480);
+		
+	end
+assign vga_h_sync = ~vga_HS;
+assign vga_v_sync = ~vga_VS;
 endmodule

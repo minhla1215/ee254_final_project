@@ -8,108 +8,108 @@ z2
 !i10f 100
 cModel Technology
 Z0 dA:/Documents/Github/ee254_final_project/final_project
-vee254_numlock_sm_tb
-!s110 1417379631
+vfinal_project
+Z1 !s110 1417386229
 !i10b 1
-!s100 4c;N0;G^74@eMLgkfF_3E0
-IFcOD^:Udmi<6IIH]=4B@40
-Z1 V`JN@9S9cnhjKRR_L]QIcM3
+!s100 H41i;<DiHBFTl:S92EXD=0
+II@JaojTH[4>Sn9;[czED>0
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
 R0
-w1417378918
-Z2 8final_project_test.v
-Z3 Ffinal_project_test.v
-Z4 L0 25
-Z5 OP;L;10.3c;59
+w1417385609
+8final_project.v
+Ffinal_project.v
+L0 2
+Z3 OP;L;10.3c;59
 r1
 !s85 0
 31
-!s108 1417379631.084000
+!s108 1417386229.846000
+!s107 final_project.v|
+!s90 -reportprogress|300|final_project.v|
+!s101 -O0
+!i113 1
+Z4 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+vfinal_project_test
+R1
+!i10b 1
+!s100 =c3=M@YeKdaT0W;Y[]3Ac2
+IlR[1W?2YJ:DFQYgFPdz042
+R2
+R0
+w1417381961
+8final_project_test.v
+Ffinal_project_test.v
+L0 25
+R3
+r1
+!s85 0
+31
+!s108 1417386229.902000
 !s107 final_project_test.v|
 !s90 -reportprogress|300|final_project_test.v|
 !s101 -O0
 !i113 1
-Z6 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
-vfinal_project
-Z7 !s110 1417382063
-!i10b 1
-!s100 ;65cfOhRhV7d[8aohTBJK0
-I7MOzC;b0]UQ59DT=:LdN>3
-R1
-R0
-w1417382012
-8final_project.v
-Ffinal_project.v
-Z8 L0 21
-R5
-r1
-!s85 0
-31
-!s108 1417382063.500000
-!s107 final_project.v|
-!s90 -reportprogress|300|+acc|final_project.v|
-!s101 -O0
-!i113 1
-Z9 o+acc -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
-vfinal_project_test
-R7
-!i10b 1
-!s100 =c3=M@YeKdaT0W;Y[]3Ac2
-IDm?XF5`amoC=<8M5XgXKz3
-R1
-R0
-w1417381961
-R2
-R3
 R4
-R5
-r1
-!s85 0
-31
-!s108 1417382063.553000
-!s107 final_project_test.v|
-!s90 -reportprogress|300|+acc|final_project_test.v|
-!s101 -O0
-!i113 1
-R9
-vfinal_project_top
-!s110 1417381226
-!i10b 1
-!s100 `i_QTB?jQ8CYUPheE6NVR2
-I;ZbNgXZJa2MjT9:R^2acD3
-R1
-R0
-w1417376040
-8A:/Documents/Github/ee254_final_project/final_project/final_project_top.v
-FA:/Documents/Github/ee254_final_project/final_project/final_project_top.v
-R8
-R5
-r1
-!s85 0
-31
-!s108 1417381226.819000
-!s107 A:/Documents/Github/ee254_final_project/final_project/final_project_top.v|
-!s90 -reportprogress|300|-work|work|A:/Documents/Github/ee254_final_project/final_project/final_project_top.v|
-!s101 -O0
-!i113 1
-o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
 vglbl
-!s110 1417382023
+R1
 !i10b 1
 !s100 ?da<9A[:m8NXH@4=6;Xk?1
 IAYLJW`o]8SmFfcJXdg81]3
-R1
+R2
 R0
 w1308630577
 8C:/Xilinx/13.2/ISE_DS/ISE/verilog/src/glbl.v
 FC:/Xilinx/13.2/ISE_DS/ISE/verilog/src/glbl.v
 L0 5
-R5
+R3
 r1
 !s85 0
 31
-!s108 1417382023.896000
+!s108 1417386229.952000
 !s107 C:/Xilinx/13.2/ISE_DS/ISE/verilog/src/glbl.v|
 !s90 -reportprogress|300|C:/Xilinx/13.2/ISE_DS/ISE/verilog/src/glbl.v|
 !s101 -O0
 !i113 1
-R6
+R4
+vvga_demo
+!s110 1417386400
+!i10b 1
+!s100 ?6i4^GQ_RPA0^lznicK;K2
+IIV9<YKZ]]n`a0^lAj[UUQ3
+R2
+R0
+w1417385779
+8A:/Documents/Github/ee254_final_project/final_project/vga_demo.v
+FA:/Documents/Github/ee254_final_project/final_project/vga_demo.v
+L0 6
+R3
+r1
+!s85 0
+31
+!s108 1417386400.269000
+!s107 A:/Documents/Github/ee254_final_project/final_project/vga_demo.v|
+!s90 -reportprogress|300|-work|work|A:/Documents/Github/ee254_final_project/final_project/vga_demo.v|
+!s101 -O0
+!i113 1
+Z5 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+vvga_display_grid
+!s110 1417386669
+!i10b 1
+!s100 PZ[m6ac5ofla<;Zib=I4>3
+Ik>hJfmMc_@NXd@O@G[>G52
+R2
+R0
+w1417386652
+8A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v
+FA:/Documents/Github/ee254_final_project/final_project/gridDisplay.v
+L0 4
+R3
+r1
+!s85 0
+31
+!s108 1417386669.802000
+!s107 A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v|
+!s90 -reportprogress|300|-work|work|A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v|
+!s101 -O0
+!i113 1
+R5

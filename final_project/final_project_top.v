@@ -19,6 +19,7 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module final_project_top(
+		vga_h_sync, vga_v_sync, vga_r, vga_g, vga_b,
 		MemOE, MemWR, RamCS, FlashCS, QuadSpiFlashCS, // Disable the three memory chips
 		ClkPort,                           // the 100 MHz incoming clock signal
 		
@@ -50,6 +51,8 @@ module final_project_top(
 		// SSD Outputs
 		output 	Cg, Cf, Ce, Cd, Cc, Cb, Ca, Dp;
 		output 	An0, An1, An2, An3;
+		
+		output vga_h_sync, vga_v_sync, vga_r, vga_g, vga_b;
 		// SSD (Seven Segment Display)
 		reg [3:0]	SSD;
 		wire [3:0]	SSD3, SSD2, SSD1, SSD0;
@@ -70,6 +73,7 @@ module final_project_top(
 		reg [4:0] state;
 		assign {q_Draw, q_P2_Win, q_P1_Win, q_Check, q_Initial} = state;
 		
+		wire q_G00,q_G10,q_G20,q_G01,q_G11,q_G21,q_G02,q_G12,q_G22;
 		
 
 
@@ -115,6 +119,28 @@ module final_project_top(
 	
 	//------------FGA MODULE--------------
 	
+	vga_display_grid display(
+	.ClkPort(sys_clk),
+	.vga_h_sync(vga_h_sync),
+	.vga_v_sync(vga_v_sync),
+	.vga_r(vga_r),
+	.vga_g(vga_g),
+	.vga_b(vga_b),
+	.Sw0(Sw0),
+	.btnU(Reset),
+	.btnD(Start),
+	.btnL(Left),
+	.btnR(Right),
+	.btnC(Enter),
+	.q_G00(q_G00),
+	.q_G10(q_G10),
+	.q_G20(q_G20),
+	.q_G01(q_G01),
+	.q_G11(q_G11),
+	.q_G21(q_G21),
+	.q_G02(q_G02),
+	.q_G12(q_G12),
+	.q_G22(q_G22));
 	
 	
 	//------------PLAYER DISPLAY----------

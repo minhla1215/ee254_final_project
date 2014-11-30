@@ -24,7 +24,6 @@ BUF BUF5 (right, Btn_R);
 BUF BUF6 (enter, Btn_C);
 
 
-reg[27:0] DIV_CLK;
 
 
 reg[8:0] state;
@@ -45,123 +44,118 @@ G22 = 9'b100000000;
 
 
 
-always @(posedge board_clk, posedge reset)
-begin: 
-	if (reset)
-		DIV_CLK <= 0;
-	else
-		DIV_CLK <= DIV_CLK + 1'b1;
-	assign button_clk = DIV_CLK[18];
-	assign clk = DIV_CLK[1];
-	
-
-
-	wire inDisplayArea;
-	wire[9:0] CounterX;
-	wire[9:0] CounterY;
-
-	hvsync_generator syncgen(.clk(clk), .reset(reset),
-		.vga_h_sync(vga_h_sync), .vga_v_sync(vga_v_sync),
-		.inDisplayArea(inDisplayArea),
-		.CounterX(CounterX), .CounterY(CounterY));
-	
-	wire R = ((CounterY == 60 || CounterY == 180 || CounterY == 300
-		|| CounterY == 420) && CounterX >= 60 && CounterX <= 420)
-		|| ((CounterX == 60 || CounterX == 180 || CounterX == 300
-		|| CounterX == 420) && CounterY >= 60 && CounterY <= 420);
-	wire G = 0;
-	wire B = 0;
-
-
-
-	always @(posedge clk, posedge reset)
-	begin
-		(* full_case, parallel_case *)
+reg[27:0] DIV_CLK;
+always @ (posedge board_clk, posedge reset)
+	begin : CLOCK_DIVIDER
 		if (reset)
-		begin
-			state <= G00;
-		end
+			DIV_CLK <= 0;
 		else
+			DIV_CLK <= DIV_CLK + 1'b1;
+	end
+	
+		assign button_clk = DIV_CLK[18];
+		assign clk = DIV_CLK[1];
+		
+
+		hvsync_generator syncgen(.clk(clk), .reset(reset),
+			.vga_h_sync(vga_h_sync), .vga_v_sync(vga_v_sync),
+			.inDisplayArea(inDisplayArea),
+			.CounterX(CounterX), .CounterY(CounterY));
+		
+		wire R = ((CounterY == 60 || CounterY == 180 || CounterY == 300
+			|| CounterY == 420) && CounterX >= 60 && CounterX <= 420)
+			|| ((CounterX == 60 || CounterX == 180 || CounterX == 300
+			|| CounterX == 420) && CounterY >= 60 && CounterY <= 420);
+		wire G = 0;
+		wire B = 0;
+
+
+
+		always @ (posedge DIV_CLK[21])
 		begin
-			case (state)
-			G00:
-			begin
-				if (left)
-					state <= G22;
-				if (right)
-					stata <= G10;
-			end
-			G10:
-			begin
-				if (left)
+			(* full_case, parallel_case *)
+			if (reset)
+				begin
 					state <= G00;
-				if (right)
-					stata <= G20;
+				end
+			else
+				begin
+					case (state)
+					G00:
+					begin
+						if (left)
+							state <= G22;
+						if (right)
+							state <= G10;
+					end
+					G10:
+					begin
+						if (left)
+							state <= G00;
+						if (right)
+							state <= G20;
+					end
+					G20:
+					begin
+						if (left)
+							state <= G10;
+						if (right)
+							state <= G01;
+					end
+					G01:
+					begin
+						if (left)
+							state <= G20;
+						if (right)
+							state <= G11;
+					end
+					G11:
+					begin
+						if (left)
+							state <= G01;
+						if (right)
+							state <= G21;
+					end
+					G21:
+					begin
+						if (left)
+							state <= G11;
+						if (right)
+							state <= G02;
+					end
+					G02:
+					begin
+						if (left)
+							state <= G21;
+						if (right)
+							state <= G12;
+					end
+					G12:
+					begin
+						if (left)
+							state <= G02;
+						if (right)
+							state <= G22;
+					end
+					G22:
+					begin
+						if (left)
+							state <= G12;
+						if (right)
+							state <= G00;
+					end
+					default:
+					begin
+					end
+					endcase
+				end
 			end
-			G20:
+		always @ (posedge clk)
 			begin
-				if (left)
-					state <= G10;
-				if (right)
-					stata <= G01;
+				vga_r <= R & inDisplayArea;
+				vga_g <= G & inDisplayArea;
+				vga_b <= B & inDisplayArea;
 			end
-			G01:
-			begin
-				if (left)
-					state <= G20;
-				if (right)
-					stata <= G11;
-			end
-			G11:
-			begin
-				if (left)
-					state <= G01;
-				if (right)
-					stata <= G21;
-			end
-			G21:
-			begin
-				if (left)
-					state <= G11;
-				if (right)
-					stata <= G02;
-			end
-			G02:
-			begin
-				if (left)
-					state <= G21;
-				if (right)
-					stata <= G12;
-			end
-			G12:
-			begin
-				if (left)
-					state <= G02;
-				if (right)
-					stata <= G22;
-			end
-			G22:
-			begin
-				if (left)
-					state <= G12;
-				if (right)
-					stata <= G00;
-			end
-			default:
-			begin
-			end
-			endcase
-		end
-	end
-	always @(posedge clk)
-	begin
-		vga_r <= R & inDisplayArea;
-		vga_g <= G & inDisplayArea;
-		vga_b <= B & inDisplayArea;
-	end
-
-
-end
 endmodule
 
 
