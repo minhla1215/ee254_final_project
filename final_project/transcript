@@ -1,31 +1,33 @@
 # Reading C:/Modeltech_pe_edu_10.3c/tcl/vsim/pref.tcl
-# do {final_project_test.fdo}
+# do {hvsync_tb.fdo}
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
 # Model Technology ModelSim PE Student Edition vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 14:23:49 on Nov 30,2014
-# vlog -reportprogress 300 final_project.v 
-# -- Compiling module final_project
+# Start time: 14:59:30 on Nov 30,2014
+# vlog -reportprogress 300 hvsync_generator.v 
+# -- Compiling module hvsync_generator
 # 
 # Top level modules:
-# 	final_project
-# End time: 14:23:49 on Nov 30,2014, Elapsed time: 0:00:00
+# 	hvsync_generator
+# End time: 14:59:30 on Nov 30,2014, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 14:23:49 on Nov 30,2014
-# vlog -reportprogress 300 final_project_test.v 
-# -- Compiling module final_project_test
+# Start time: 14:59:30 on Nov 30,2014
+# vlog -reportprogress 300 hvsync_generator_tb.v 
+# -- Compiling module hvsync_tb
 # 
 # Top level modules:
-# 	final_project_test
-# End time: 14:23:49 on Nov 30,2014, Elapsed time: 0:00:00
+# 	hvsync_tb
+# End time: 14:59:30 on Nov 30,2014, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 14:23:49 on Nov 30,2014
+# Start time: 14:59:30 on Nov 30,2014
 # vlog -reportprogress 300 C:/Xilinx/13.2/ISE_DS/ISE/verilog/src/glbl.v 
 # -- Compiling module glbl
 # 
 # Top level modules:
 # 	glbl
-# End time: 14:23:49 on Nov 30,2014, Elapsed time: 0:00:00
+# End time: 14:59:30 on Nov 30,2014, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # //  ModelSim PE Student Edition 10.3c Jul 19 2014 
 # //
@@ -40,9 +42,9 @@
 # // THE ModelSim PE Student Edition IS NOT A SUPPORTED PRODUCT.
 # // FOR HIGHER EDUCATION PURPOSES ONLY
 # //
-# vsim -gui -do "do {final_project_test.fdo}" 
-# Start time: 14:23:50 on Nov 30,2014
-# Loading work.final_project_test
+# vsim -gui -do "do {hvsync_tb.fdo}" 
+# Start time: 14:59:30 on Nov 30,2014
+# Loading work.hvsync_tb
 # ** Error: (vsim-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
 # 
 # No such file or directory. (errno = ENOENT)
@@ -52,123 +54,22 @@
 # ** Error: (vsim-19) Failed to access library 'secureip' at "secureip".
 # 
 # No such file or directory. (errno = ENOENT)
-# Loading work.final_project
+# Loading work.hvsync_generator
 # Loading work.glbl
+# ** Warning: (vsim-3015) hvsync_generator_tb.v(25): [PCDPC] - Port size (10) does not match connection size (9) for port 'CounterY'. The port definition is at: hvsync_generator.v(14).
+# 
+#         Region: /hvsync_tb/UUT
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
 #           File in use by: Administrator  Hostname: NATHANTIMPK25B5  ProcessID: 3892
 # 
-#           Attempting to use alternate WLF file "./wlftvvnn87".
+#           Attempting to use alternate WLF file "./wlftik2whc".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlftvvnn87
+#           Using alternate file: ./wlftik2whc
 # 
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-quit -sims
-# unknown switch: -sims
-quit -sim
-vlog -reportprogress 300 -work work A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v
-# Model Technology ModelSim PE Student Edition vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 14:24:09 on Nov 30,2014
-# vlog -reportprogress 300 -work work A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v 
-# -- Compiling module vga_display_grid
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(54): LHS in procedural continuous assignment may not be a net: button_clk.
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(55): LHS in procedural continuous assignment may not be a net: clk.
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(59): near "wire": syntax error, unexpected wire
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(65): (vlog-2730) Undefined variable: 'inDisplayArea'.
-# 
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(66): (vlog-2730) Undefined variable: 'CounterX'.
-# 
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(66): (vlog-2730) Undefined variable: 'CounterY'.
-# 
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(66): Checker 'hvsync_generator' not found.  Instantiation 'syncgen' must be of a visible checker.
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(68): near "wire": syntax error, unexpected wire
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(66): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(92): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(99): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(106): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(113): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(120): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(127): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(134): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(141): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(148): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER
-# End time: 14:24:09 on Nov 30,2014, Elapsed time: 0:00:00
-# Errors: 18, Warnings: 0
-vlog -reportprogress 300 -work work A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v
-# Model Technology ModelSim PE Student Edition vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 14:25:42 on Nov 30,2014
-# vlog -reportprogress 300 -work work A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v 
-# -- Compiling module vga_display_grid
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(72): Checker 'hvsync_generator' not found.  Instantiation 'syncgen' must be of a visible checker.
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(77): near "always": syntax error, unexpected always
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(72): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(92): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(99): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(106): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(113): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(120): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(127): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(134): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(141): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(148): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER
-# End time: 14:25:42 on Nov 30,2014, Elapsed time: 0:00:00
-# Errors: 12, Warnings: 0
-vlog -reportprogress 300 -work work A:/Documents/Github/ee254_final_project/final_project/vga_demo.v
-# Model Technology ModelSim PE Student Edition vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 14:26:40 on Nov 30,2014
-# vlog -reportprogress 300 -work work A:/Documents/Github/ee254_final_project/final_project/vga_demo.v 
-# -- Compiling module vga_demo
-# 
-# Top level modules:
-# 	vga_demo
-# End time: 14:26:40 on Nov 30,2014, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v
-# Model Technology ModelSim PE Student Edition vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 14:26:43 on Nov 30,2014
-# vlog -reportprogress 300 -work work A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v 
-# -- Compiling module vga_display_grid
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(54): LHS in procedural continuous assignment may not be a net: button_clk.
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(55): LHS in procedural continuous assignment may not be a net: clk.
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(60): (vlog-2730) Undefined variable: 'inDisplayArea'.
-# 
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(61): (vlog-2730) Undefined variable: 'CounterX'.
-# 
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(61): (vlog-2730) Undefined variable: 'CounterY'.
-# 
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(61): Checker 'hvsync_generator' not found.  Instantiation 'syncgen' must be of a visible checker.
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(63): near "wire": syntax error, unexpected wire
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(61): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(87): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(94): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(101): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(108): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(115): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(122): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(129): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(136): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v(143): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER
-# End time: 14:26:44 on Nov 30,2014, Elapsed time: 0:00:01
-# Errors: 17, Warnings: 0
-vlog -reportprogress 300 -work work A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v
-# Model Technology ModelSim PE Student Edition vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 14:31:09 on Nov 30,2014
-# vlog -reportprogress 300 -work work A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v 
-# -- Compiling module vga_display_grid
-# 
-# Top level modules:
-# 	vga_display_grid
-# End time: 14:31:09 on Nov 30,2014, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work A:/Documents/Github/ee254_final_project/final_project/hvsync_generator.v
-# Model Technology ModelSim PE Student Edition vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 14:41:56 on Nov 30,2014
-# vlog -reportprogress 300 -work work A:/Documents/Github/ee254_final_project/final_project/hvsync_generator.v 
-# -- Compiling module hvsync_generator
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/hvsync_generator.v(64): LHS in procedural continuous assignment may not be a net: vga_h_sync.
-# ** Error: A:/Documents/Github/ee254_final_project/final_project/hvsync_generator.v(65): LHS in procedural continuous assignment may not be a net: vga_v_sync.
-# End time: 14:41:56 on Nov 30,2014, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
+# End time: 14:59:41 on Nov 30,2014, Elapsed time: 0:00:11
+# Errors: 3, Warnings: 3

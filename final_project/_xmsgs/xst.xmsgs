@@ -5,313 +5,91 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 74: Assignment to <arg fmt="%s" index="1">q_Initial</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 75: Assignment to <arg fmt="%s" index="1">q_Initial</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 62: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 62: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 69: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 69: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1511" delta="new" >"A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 15: Mix of blocking and non-blocking assignments to variable &lt;<arg fmt="%s" index="1">gameOver</arg>&gt; is not a recommended coding practice.
+<msg type="warning" file="HDLCompiler" num="1511" delta="old" >"A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 15: Mix of blocking and non-blocking assignments to variable &lt;<arg fmt="%s" index="1">gameOver</arg>&gt; is not a recommended coding practice.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1511" delta="new" >"A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 10: Mix of blocking and non-blocking assignments to variable &lt;<arg fmt="%s" index="1">mapBoard</arg>&gt; is not a recommended coding practice.
+<msg type="warning" file="HDLCompiler" num="1511" delta="old" >"A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 10: Mix of blocking and non-blocking assignments to variable &lt;<arg fmt="%s" index="1">mapBoard</arg>&gt; is not a recommended coding practice.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 195: Result of <arg fmt="%d" index="1">79</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">49</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 195: Result of <arg fmt="%d" index="1">79</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">49</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 196: Result of <arg fmt="%d" index="1">63</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">49</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 196: Result of <arg fmt="%d" index="1">63</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">49</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 197: Result of <arg fmt="%d" index="1">63</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">49</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 197: Result of <arg fmt="%d" index="1">63</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">49</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 198: Result of <arg fmt="%d" index="1">63</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">49</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 198: Result of <arg fmt="%d" index="1">63</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">49</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 108: Assignment to <arg fmt="%s" index="1">q_Initial</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 109: Assignment to <arg fmt="%s" index="1">q_Initial</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 109: Assignment to <arg fmt="%s" index="1">q_Check</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 110: Assignment to <arg fmt="%s" index="1">q_Check</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 110: Assignment to <arg fmt="%s" index="1">q_P1_Win</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 111: Assignment to <arg fmt="%s" index="1">q_P1_Win</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 111: Assignment to <arg fmt="%s" index="1">q_P2_Win</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 112: Assignment to <arg fmt="%s" index="1">q_P2_Win</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 112: Assignment to <arg fmt="%s" index="1">q_Draw</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 113: Assignment to <arg fmt="%s" index="1">q_Draw</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"A:\Documents\Github\ee254_final_project\final_project\gridDisplay.v" Line 21: Assignment to <arg fmt="%s" index="1">start</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 123: Assignment to <arg fmt="%s" index="1">q_G22</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"A:\Documents\Github\ee254_final_project\final_project\gridDisplay.v" Line 24: Assignment to <arg fmt="%s" index="1">enter</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 137: Assignment to <arg fmt="%s" index="1">button_clk</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"A:\Documents\Github\ee254_final_project\final_project\gridDisplay.v" Line 56: Assignment to <arg fmt="%s" index="1">button_clk</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"A:\Documents\Github\ee254_final_project\final_project\hvsync_generator.v" Line 35: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"A:\Documents\Github\ee254_final_project\final_project\hvsync_generator.v" Line 35: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"A:\Documents\Github\ee254_final_project\final_project\hvsync_generator.v" Line 45: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"A:\Documents\Github\ee254_final_project\final_project\hvsync_generator.v" Line 45: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 143: Net &lt;<arg fmt="%s" index="1">reset</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="new" >"A:\Documents\Github\ee254_final_project\final_project\gridDisplay.v" Line 63: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">CounterX</arg>&gt;. Formal port size is <arg fmt="%d" index="2">10</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">a:/documents/github/ee254_final_project/final_project/final_project_top.v</arg>&quot; line <arg fmt="%s" index="2">102</arg>: Output port &lt;<arg fmt="%s" index="3">q_Initial</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fp</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"A:\Documents\Github\ee254_final_project\final_project\gridDisplay.v" Line 20: Net &lt;<arg fmt="%s" index="1">Btn_U</arg>&gt; does not have a driver.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">a:/documents/github/ee254_final_project/final_project/final_project_top.v</arg>&quot; line <arg fmt="%s" index="2">102</arg>: Output port &lt;<arg fmt="%s" index="3">q_Check</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fp</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"A:\Documents\Github\ee254_final_project\final_project\gridDisplay.v" Line 21: Net &lt;<arg fmt="%s" index="1">Btn_D</arg>&gt; does not have a driver.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">a:/documents/github/ee254_final_project/final_project/final_project_top.v</arg>&quot; line <arg fmt="%s" index="2">102</arg>: Output port &lt;<arg fmt="%s" index="3">q_P1_Win</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fp</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"A:\Documents\Github\ee254_final_project\final_project\gridDisplay.v" Line 22: Net &lt;<arg fmt="%s" index="1">Btn_L</arg>&gt; does not have a driver.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">a:/documents/github/ee254_final_project/final_project/final_project_top.v</arg>&quot; line <arg fmt="%s" index="2">102</arg>: Output port &lt;<arg fmt="%s" index="3">q_P2_Win</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fp</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"A:\Documents\Github\ee254_final_project\final_project\gridDisplay.v" Line 23: Net &lt;<arg fmt="%s" index="1">Btn_R</arg>&gt; does not have a driver.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">a:/documents/github/ee254_final_project/final_project/final_project_top.v</arg>&quot; line <arg fmt="%s" index="2">102</arg>: Output port &lt;<arg fmt="%s" index="3">q_Draw</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fp</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"A:\Documents\Github\ee254_final_project\final_project\gridDisplay.v" Line 24: Net &lt;<arg fmt="%s" index="1">Btn_C</arg>&gt; does not have a driver.
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">reset</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 135: Assignment to <arg fmt="%s" index="1">q_G00</arg> ignored, since the identifier is never used
+<msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 136: Assignment to <arg fmt="%s" index="1">q_G10</arg> ignored, since the identifier is never used
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_SSD_CATHODES</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 137: Assignment to <arg fmt="%s" index="1">q_G20</arg> ignored, since the identifier is never used
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DIV_CLK_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">final_project_top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 138: Assignment to <arg fmt="%s" index="1">q_G01</arg> ignored, since the identifier is never used
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 139: Assignment to <arg fmt="%s" index="1">q_G11</arg> ignored, since the identifier is never used
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 140: Assignment to <arg fmt="%s" index="1">q_G21</arg> ignored, since the identifier is never used
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 141: Assignment to <arg fmt="%s" index="1">q_G02</arg> ignored, since the identifier is never used
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 142: Assignment to <arg fmt="%s" index="1">q_G12</arg> ignored, since the identifier is never used
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 143: Assignment to <arg fmt="%s" index="1">q_G22</arg> ignored, since the identifier is never used
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">a:/documents/github/ee254_final_project/final_project/final_project_top.v</arg>&quot; line <arg fmt="%s" index="2">101</arg>: Output port &lt;<arg fmt="%s" index="3">q_Initial</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fp</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">a:/documents/github/ee254_final_project/final_project/final_project_top.v</arg>&quot; line <arg fmt="%s" index="2">101</arg>: Output port &lt;<arg fmt="%s" index="3">q_Check</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fp</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">a:/documents/github/ee254_final_project/final_project/final_project_top.v</arg>&quot; line <arg fmt="%s" index="2">101</arg>: Output port &lt;<arg fmt="%s" index="3">q_P1_Win</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fp</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">a:/documents/github/ee254_final_project/final_project/final_project_top.v</arg>&quot; line <arg fmt="%s" index="2">101</arg>: Output port &lt;<arg fmt="%s" index="3">q_P2_Win</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fp</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">a:/documents/github/ee254_final_project/final_project/final_project_top.v</arg>&quot; line <arg fmt="%s" index="2">101</arg>: Output port &lt;<arg fmt="%s" index="3">q_Draw</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fp</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">a:/documents/github/ee254_final_project/final_project/final_project_top.v</arg>&quot; line <arg fmt="%s" index="2">122</arg>: Output port &lt;<arg fmt="%s" index="3">q_G00</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">display</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">a:/documents/github/ee254_final_project/final_project/final_project_top.v</arg>&quot; line <arg fmt="%s" index="2">122</arg>: Output port &lt;<arg fmt="%s" index="3">q_G10</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">display</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">a:/documents/github/ee254_final_project/final_project/final_project_top.v</arg>&quot; line <arg fmt="%s" index="2">122</arg>: Output port &lt;<arg fmt="%s" index="3">q_G20</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">display</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">a:/documents/github/ee254_final_project/final_project/final_project_top.v</arg>&quot; line <arg fmt="%s" index="2">122</arg>: Output port &lt;<arg fmt="%s" index="3">q_G01</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">display</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">a:/documents/github/ee254_final_project/final_project/final_project_top.v</arg>&quot; line <arg fmt="%s" index="2">122</arg>: Output port &lt;<arg fmt="%s" index="3">q_G11</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">display</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">a:/documents/github/ee254_final_project/final_project/final_project_top.v</arg>&quot; line <arg fmt="%s" index="2">122</arg>: Output port &lt;<arg fmt="%s" index="3">q_G21</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">display</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">a:/documents/github/ee254_final_project/final_project/final_project_top.v</arg>&quot; line <arg fmt="%s" index="2">122</arg>: Output port &lt;<arg fmt="%s" index="3">q_G02</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">display</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">a:/documents/github/ee254_final_project/final_project/final_project_top.v</arg>&quot; line <arg fmt="%s" index="2">122</arg>: Output port &lt;<arg fmt="%s" index="3">q_G12</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">display</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">a:/documents/github/ee254_final_project/final_project/final_project_top.v</arg>&quot; line <arg fmt="%s" index="2">122</arg>: Output port &lt;<arg fmt="%s" index="3">q_G22</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">display</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">Sw0</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">btnU</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">btnD</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">btnL</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">btnR</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">btnC</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">a:/documents/github/ee254_final_project/final_project/griddisplay.v</arg>&quot; line <arg fmt="%s" index="2">60</arg>: Output port &lt;<arg fmt="%s" index="3">CounterX</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">syncgen</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">a:/documents/github/ee254_final_project/final_project/griddisplay.v</arg>&quot; line <arg fmt="%s" index="2">60</arg>: Output port &lt;<arg fmt="%s" index="3">CounterY</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">syncgen</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">Btn_U</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
-</msg>
-
-<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">Btn_D</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
-</msg>
-
-<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">Btn_L</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
-</msg>
-
-<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">Btn_R</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
-</msg>
-
-<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">Btn_C</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">vga_r</arg>&lt;<arg fmt="%d" index="2">0</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">vga_display_grid</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">vga_g</arg>&lt;<arg fmt="%d" index="2">0</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">vga_display_grid</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">vga_b</arg>&lt;<arg fmt="%d" index="2">0</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">vga_display_grid</arg>&gt;.
-</msg>
-
-<msg type="info" file="Xst" num="1767" delta="new" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
-</msg>
-
-<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_SSD_CATHODES</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">DIV_CLK_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_display_grid</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">DIV_CLK_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_display_grid</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">DIV_CLK_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_display_grid</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">DIV_CLK_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_display_grid</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">DIV_CLK_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_display_grid</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">DIV_CLK_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_display_grid</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">DIV_CLK_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">final_project_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/state_FSM_FFd1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">final_project_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/state_FSM_FFd2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">final_project_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/state_FSM_FFd3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">final_project_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/state_FSM_FFd4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">final_project_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/state_FSM_FFd5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">final_project_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/state_FSM_FFd6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">final_project_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/state_FSM_FFd8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">final_project_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/state_FSM_FFd9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">final_project_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/state_FSM_FFd7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">final_project_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/DIV_CLK_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">final_project_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/DIV_CLK_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">final_project_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/DIV_CLK_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">final_project_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/DIV_CLK_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">final_project_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/DIV_CLK_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">final_project_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/DIV_CLK_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">final_project_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/DIV_CLK_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">final_project_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/DIV_CLK_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">final_project_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/DIV_CLK_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">final_project_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/DIV_CLK_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">final_project_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/DIV_CLK_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">final_project_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/DIV_CLK_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">final_project_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/DIV_CLK_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">final_project_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/DIV_CLK_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">final_project_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/DIV_CLK_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">final_project_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/DIV_CLK_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">final_project_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/DIV_CLK_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">final_project_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/DIV_CLK_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">final_project_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/DIV_CLK_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">final_project_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/DIV_CLK_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">final_project_top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">display/syncgen/inDisplayArea</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">final_project_top</arg>&gt;.
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 </msg>
 
 </messages>

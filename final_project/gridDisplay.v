@@ -57,20 +57,51 @@ always @ (posedge board_clk, posedge reset)
 		assign clk = DIV_CLK[1];
 		
 
+		
+	wire inDisplayArea;
+	wire [9:0] CounterX;
+	wire [9:0] CounterY;
 		hvsync_generator syncgen(.clk(clk), .reset(reset),
 			.vga_h_sync(vga_h_sync), .vga_v_sync(vga_v_sync),
 			.inDisplayArea(inDisplayArea),
 			.CounterX(CounterX), .CounterY(CounterY));
+			
+			
+			
+	reg [9:0] position;
+	
 		
-		wire R = ((CounterY == 60 || CounterY == 180 || CounterY == 300
+		/*wire R = ((CounterY == 60 || CounterY == 180 || CounterY == 300
 			|| CounterY == 420) && CounterX >= 60 && CounterX <= 420)
 			|| ((CounterX == 60 || CounterX == 180 || CounterX == 300
-			|| CounterX == 420) && CounterY >= 60 && CounterY <= 420);
+			|| CounterX == 420) && CounterY >= 60 && CounterY <= 420);*/
+			/*
+		wire R = CounterY >= 100 && CounterY <= 200 && CounterX >= 100 && CounterX <= 200;
+*/	
+
+
+		wire R = 0;
 		wire G = 0;
 		wire B = 0;
 
 
+/*
+	
+	always @(posedge DIV_CLK[21])
+		begin
+			if(reset)
+				position<=240;
+			else if(btnD && ~btnU)
+				position<=position+2;
+			else if(btnU && ~btnD)
+				position<=position-2;	
+		end
 
+	wire R = CounterY>=(position-10) && CounterY<=(position+10) && CounterX[8:5]==7;
+	wire G = CounterX>100 && CounterX<200 && CounterY[5:3]==7;
+	wire B = 0;
+*/
+/*
 		always @ (posedge DIV_CLK[21])
 		begin
 			(* full_case, parallel_case *)
@@ -150,6 +181,7 @@ always @ (posedge board_clk, posedge reset)
 					endcase
 				end
 			end
+			*/
 		always @ (posedge clk)
 			begin
 				vga_r <= R & inDisplayArea;

@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dA:/Documents/Github/ee254_final_project/final_project
 vfinal_project
-Z1 !s110 1417386229
+Z1 !s110 1417388192
 !i10b 1
 !s100 H41i;<DiHBFTl:S92EXD=0
 II@JaojTH[4>Sn9;[czED>0
@@ -23,7 +23,7 @@ Z3 OP;L;10.3c;59
 r1
 !s85 0
 31
-!s108 1417386229.846000
+!s108 1417388192.100000
 !s107 final_project.v|
 !s90 -reportprogress|300|final_project.v|
 !s101 -O0
@@ -44,14 +44,14 @@ R3
 r1
 !s85 0
 31
-!s108 1417386229.902000
+!s108 1417388192.152000
 !s107 final_project_test.v|
 !s90 -reportprogress|300|final_project_test.v|
 !s101 -O0
 !i113 1
 R4
 vglbl
-R1
+Z5 !s110 1417388370
 !i10b 1
 !s100 ?da<9A[:m8NXH@4=6;Xk?1
 IAYLJW`o]8SmFfcJXdg81]3
@@ -65,9 +65,51 @@ R3
 r1
 !s85 0
 31
-!s108 1417386229.952000
+!s108 1417388370.296000
 !s107 C:/Xilinx/13.2/ISE_DS/ISE/verilog/src/glbl.v|
 !s90 -reportprogress|300|C:/Xilinx/13.2/ISE_DS/ISE/verilog/src/glbl.v|
+!s101 -O0
+!i113 1
+R4
+vhvsync_generator
+R5
+!i10b 1
+!s100 5Y]Wbe`BI9WoaA;Eomazd2
+IY0Eh8gKagS=O_2U8kW;N:1
+R2
+R0
+w1417387353
+8hvsync_generator.v
+Fhvsync_generator.v
+L0 13
+R3
+r1
+!s85 0
+31
+!s108 1417388370.198000
+!s107 hvsync_generator.v|
+!s90 -reportprogress|300|hvsync_generator.v|
+!s101 -O0
+!i113 1
+R4
+vhvsync_tb
+R5
+!i10b 1
+!s100 ;04b6hKo0VTh^>9GKi;b23
+IbXWincXfkm>Wc9YXZe]=90
+R2
+R0
+Z6 w1417385779
+8hvsync_generator_tb.v
+Fhvsync_generator_tb.v
+L0 9
+R3
+r1
+!s85 0
+31
+!s108 1417388370.246000
+!s107 hvsync_generator_tb.v|
+!s90 -reportprogress|300|hvsync_generator_tb.v|
 !s101 -O0
 !i113 1
 R4
@@ -78,7 +120,7 @@ vvga_demo
 IIV9<YKZ]]n`a0^lAj[UUQ3
 R2
 R0
-w1417385779
+R6
 8A:/Documents/Github/ee254_final_project/final_project/vga_demo.v
 FA:/Documents/Github/ee254_final_project/final_project/vga_demo.v
 L0 6
@@ -91,7 +133,7 @@ r1
 !s90 -reportprogress|300|-work|work|A:/Documents/Github/ee254_final_project/final_project/vga_demo.v|
 !s101 -O0
 !i113 1
-Z5 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+Z7 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
 vvga_display_grid
 !s110 1417386669
 !i10b 1
@@ -112,4 +154,4 @@ r1
 !s90 -reportprogress|300|-work|work|A:/Documents/Github/ee254_final_project/final_project/gridDisplay.v|
 !s101 -O0
 !i113 1
-R5
+R7

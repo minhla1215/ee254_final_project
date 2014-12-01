@@ -36,3 +36,112 @@ map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt off final_project_top_map.ncd final_project_top.ncd final_project_top.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml final_project_top.twx final_project_top.ncd -o final_project_top.twr final_project_top.pcf -ucf final_project_top.ucf 
 bitgen -intstyle ise -f final_project_top.ut final_project_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc final_project_top.ucf -p xc6slx16-csg324-3 final_project_top.ngc final_project_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o final_project_top_map.ncd final_project_top.ngd final_project_top.pcf 
+par -w -intstyle ise -ol high -mt off final_project_top_map.ncd final_project_top.ncd final_project_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml final_project_top.twx final_project_top.ncd -o final_project_top.twr final_project_top.pcf -ucf final_project_top.ucf 
+bitgen -intstyle ise -f final_project_top.ut final_project_top.ncd 
+xst -intstyle ise -ifn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.xst" -ofn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.syr" 
+xst -intstyle ise -ifn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.xst" -ofn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.syr" 
+xst -intstyle ise -ifn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.xst" -ofn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc final_project_top.ucf -p xc6slx16-csg324-3 final_project_top.ngc final_project_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o final_project_top_map.ncd final_project_top.ngd final_project_top.pcf 
+par -w -intstyle ise -ol high -mt off final_project_top_map.ncd final_project_top.ncd final_project_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml final_project_top.twx final_project_top.ncd -o final_project_top.twr final_project_top.pcf -ucf final_project_top.ucf 
+bitgen -intstyle ise -f final_project_top.ut final_project_top.ncd 
+xst -intstyle ise -ifn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.xst" -ofn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc final_project_top.ucf -uc nexys3.ucf -p xc6slx16-csg324-3 final_project_top.ngc final_project_top.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc final_project_top.ucf -uc nexys3.ucf -p xc6slx16-csg324-3 final_project_top.ngc final_project_top.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc final_project_top.ucf -uc nexys3.ucf -p xc6slx16-csg324-3 final_project_top.ngc final_project_top.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc final_project_top.ucf -uc nexys3.ucf -p xc6slx16-csg324-3 final_project_top.ngc final_project_top.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc final_project_top.ucf -uc nexys3.ucf -p xc6slx16-csg324-3 final_project_top.ngc final_project_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o final_project_top_map.ncd final_project_top.ngd final_project_top.pcf 
+par -w -intstyle ise -ol high -mt off final_project_top_map.ncd final_project_top.ncd final_project_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml final_project_top.twx final_project_top.ncd -o final_project_top.twr final_project_top.pcf -ucf final_project_top.ucf -ucf nexys3.ucf 
+bitgen -intstyle ise -f final_project_top.ut final_project_top.ncd 
+xst -intstyle ise -ifn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.xst" -ofn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.syr" 
+xst -intstyle ise -ifn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.xst" -ofn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.syr" 
+xst -intstyle ise -ifn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.xst" -ofn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.syr" 
+xst -intstyle ise -ifn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.xst" -ofn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.syr" 
+xst -intstyle ise -ifn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.xst" -ofn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.syr" 
+xst -intstyle ise -ifn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.xst" -ofn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.syr" 
+xst -intstyle ise -ifn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.xst" -ofn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 final_project_top.ngc final_project_top.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 final_project_top.ngc final_project_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o final_project_top_map.ncd final_project_top.ngd final_project_top.pcf 
+par -w -intstyle ise -ol high -mt off final_project_top_map.ncd final_project_top.ncd final_project_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml final_project_top.twx final_project_top.ncd -o final_project_top.twr final_project_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f final_project_top.ut final_project_top.ncd 
+bitgen -intstyle ise -f final_project_top.ut final_project_top.ncd 
+xst -intstyle ise -ifn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.xst" -ofn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 final_project_top.ngc final_project_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o final_project_top_map.ncd final_project_top.ngd final_project_top.pcf 
+par -w -intstyle ise -ol high -mt off final_project_top_map.ncd final_project_top.ncd final_project_top.pcf 
+bitgen -intstyle ise -f final_project_top.ut final_project_top.ncd 
+xst -intstyle ise -ifn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.xst" -ofn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 final_project_top.ngc final_project_top.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 final_project_top.ngc final_project_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o final_project_top_map.ncd final_project_top.ngd final_project_top.pcf 
+par -w -intstyle ise -ol high -mt off final_project_top_map.ncd final_project_top.ncd final_project_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml final_project_top.twx final_project_top.ncd -o final_project_top.twr final_project_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f final_project_top.ut final_project_top.ncd 
+xst -intstyle ise -ifn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.xst" -ofn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 final_project_top.ngc final_project_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o final_project_top_map.ncd final_project_top.ngd final_project_top.pcf 
+par -w -intstyle ise -ol high -mt off final_project_top_map.ncd final_project_top.ncd final_project_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml final_project_top.twx final_project_top.ncd -o final_project_top.twr final_project_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f final_project_top.ut final_project_top.ncd 
+xst -intstyle ise -ifn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.xst" -ofn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 final_project_top.ngc final_project_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o final_project_top_map.ncd final_project_top.ngd final_project_top.pcf 
+par -w -intstyle ise -ol high -mt off final_project_top_map.ncd final_project_top.ncd final_project_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml final_project_top.twx final_project_top.ncd -o final_project_top.twr final_project_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f final_project_top.ut final_project_top.ncd 
+xst -intstyle ise -ifn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.xst" -ofn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 final_project_top.ngc final_project_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o final_project_top_map.ncd final_project_top.ngd final_project_top.pcf 
+par -w -intstyle ise -ol high -mt off final_project_top_map.ncd final_project_top.ncd final_project_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml final_project_top.twx final_project_top.ncd -o final_project_top.twr final_project_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f final_project_top.ut final_project_top.ncd 
+xst -intstyle ise -ifn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.xst" -ofn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.syr" 
+xst -intstyle ise -ifn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.xst" -ofn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 final_project_top.ngc final_project_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o final_project_top_map.ncd final_project_top.ngd final_project_top.pcf 
+par -w -intstyle ise -ol high -mt off final_project_top_map.ncd final_project_top.ncd final_project_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml final_project_top.twx final_project_top.ncd -o final_project_top.twr final_project_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f final_project_top.ut final_project_top.ncd 
+xst -intstyle ise -ifn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.xst" -ofn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 final_project_top.ngc final_project_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o final_project_top_map.ncd final_project_top.ngd final_project_top.pcf 
+par -w -intstyle ise -ol high -mt off final_project_top_map.ncd final_project_top.ncd final_project_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml final_project_top.twx final_project_top.ncd -o final_project_top.twr final_project_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f final_project_top.ut final_project_top.ncd 
+xst -intstyle ise -ifn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.xst" -ofn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 final_project_top.ngc final_project_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o final_project_top_map.ncd final_project_top.ngd final_project_top.pcf 
+par -w -intstyle ise -ol high -mt off final_project_top_map.ncd final_project_top.ncd final_project_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml final_project_top.twx final_project_top.ncd -o final_project_top.twr final_project_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f final_project_top.ut final_project_top.ncd 
+xst -intstyle ise -ifn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.xst" -ofn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.syr" 
+xst -intstyle ise -ifn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.xst" -ofn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.syr" 
+xst -intstyle ise -ifn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.xst" -ofn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.syr" 
+xst -intstyle ise -ifn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.xst" -ofn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.syr" 
+xst -intstyle ise -ifn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.xst" -ofn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.syr" 
+xst -intstyle ise -ifn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.xst" -ofn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.syr" 
+xst -intstyle ise -ifn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.xst" -ofn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.syr" 
+xst -intstyle ise -ifn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.xst" -ofn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.syr" 
+xst -intstyle ise -ifn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.xst" -ofn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.syr" 
+xst -intstyle ise -ifn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.xst" -ofn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.syr" 
+xst -intstyle ise -ifn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.xst" -ofn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.syr" 
+xst -intstyle ise -ifn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.xst" -ofn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 final_project_top.ngc final_project_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o final_project_top_map.ncd final_project_top.ngd final_project_top.pcf 
+par -w -intstyle ise -ol high -mt off final_project_top_map.ncd final_project_top.ncd final_project_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml final_project_top.twx final_project_top.ncd -o final_project_top.twr final_project_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f final_project_top.ut final_project_top.ncd 
+xst -intstyle ise -ifn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.xst" -ofn "A:/Documents/Github/ee254_final_project/final_project/final_project_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 final_project_top.ngc final_project_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o final_project_top_map.ncd final_project_top.ngd final_project_top.pcf 
+par -w -intstyle ise -ol high -mt off final_project_top_map.ncd final_project_top.ncd final_project_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml final_project_top.twx final_project_top.ncd -o final_project_top.twr final_project_top.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f final_project_top.ut final_project_top.ncd 
