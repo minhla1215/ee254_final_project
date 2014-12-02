@@ -177,6 +177,17 @@ reg G12b = 1'b0;
 reg G12g = 1'b0;
 reg G22b = 1'b0;
 reg G22g = 1'b0;
+
+reg G00c = 1'b0;
+reg G10c = 1'b0;
+reg G20c = 1'b0;
+reg G01c = 1'b0;
+reg G11c = 1'b0;
+reg G21c = 1'b0;
+reg G02c = 1'b0;
+reg G12c = 1'b0;
+reg G22c = 1'b0;
+
 wire G00Area = CounterX >= 60 && CounterX <= 180 
 	&& CounterY >= 60 && CounterY <= 180;
 wire G10Area = CounterX >= 180 && CounterX <= 300 
@@ -195,13 +206,38 @@ wire G12Area = CounterX >= 180 && CounterX <= 300
 	&& CounterY >= 300 && CounterY <= 420;
 wire G22Area = CounterX >= 300 && CounterX <= 420 
 	&& CounterY >= 300 && CounterY <= 420;
-wire R = Grid;
+
+wire G00Cursor = CounterX >= 100 && CounterX <= 140 
+	&& CounterY >= 100 && CounterY <= 140;
+wire G10Cursor = CounterX >= 220 && CounterX <= 260 
+	&& CounterY >= 100 && CounterY <= 140;
+wire G20Cursor = CounterX >= 340 && CounterX <= 380 
+	&& CounterY >= 100 && CounterY <= 140;
+wire G01Cursor = CounterX >= 100 && CounterX <= 140 
+	&& CounterY >= 220 && CounterY <= 260;
+wire G11Cursor = CounterX >= 220 && CounterX <= 260 
+	&& CounterY >= 220 && CounterY <= 260;
+wire G21Cursor = CounterX >= 340 && CounterX <= 380 
+	&& CounterY >= 220 && CounterY <= 260;
+wire G02Cursor = CounterX >= 100 && CounterX <= 140 
+	&& CounterY >= 340 && CounterY <= 380;
+wire G12Cursor = CounterX >= 220 && CounterX <= 260 
+	&& CounterY >= 340 && CounterY <= 380;
+wire G22Cursor = CounterX >= 340 && CounterX <= 380 
+	&& CounterY >= 340 && CounterY <= 380;
+
+wire Cursor = (G00Cursor && G00c) || (G10Cursor && G10c) || (G20Cursor && G20c)
+	|| (G01Cursor && G01c) || (G11Cursor && G11c) || (G21Cursor && G21c)
+	|| (G02Cursor && G02c) || (G12Cursor && G12c) || (G22Cursor && G22c);
+
+wire R = Grid || Cursor;
 wire G = (G00Area && G00g) || (G10Area && G10g) || (G20Area && G20g)
 	|| (G01Area && G01g) || (G11Area && G11g) || (G21Area && G21g)
 	|| (G02Area && G02g) || (G12Area && G12g) || (G22Area && G22g);
 wire B = (G00Area && G00b) || (G10Area && G10b) || (G20Area && G20b)
 	|| (G01Area && G01b) || (G11Area && G11b) || (G21Area && G21b)
 	|| (G02Area && G02b) || (G12Area && G12b) || (G22Area && G22b);
+
 always @(posedge DIV_CLK[21])
 begin
 	(* full_case, parallel_case *)
@@ -209,9 +245,21 @@ begin
 		displayState <= G00;
 	else
 	begin
+
 		case (displayState)
 		G00:
 		begin
+			/* UPDATE CURSOR */
+			G00c <= 1'b1;
+			G10c <= 1'b0;
+			G20c <= 1'b0;
+			G01c <= 1'b0;
+			G11c <= 1'b0;
+			G21c <= 1'b0;
+			G02c <= 1'b0;
+			G12c <= 1'b0;
+			G22c <= 1'b0;
+
 			if (Enter)
 			begin
 				if (!player)
@@ -226,6 +274,17 @@ begin
 		end
 		G10:
 		begin
+			/* UPDATE CURSOR */
+			G00c <= 1'b0;
+			G10c <= 1'b1;
+			G20c <= 1'b0;
+			G01c <= 1'b0;
+			G11c <= 1'b0;
+			G21c <= 1'b0;
+			G02c <= 1'b0;
+			G12c <= 1'b0;
+			G22c <= 1'b0;
+
 			if (Enter)
 			begin
 				if (!player)
@@ -240,6 +299,17 @@ begin
 		end
 		G20:
 		begin
+			/* UPDATE CURSOR */
+			G00c <= 1'b0;
+			G10c <= 1'b0;
+			G20c <= 1'b1;
+			G01c <= 1'b0;
+			G11c <= 1'b0;
+			G21c <= 1'b0;
+			G02c <= 1'b0;
+			G12c <= 1'b0;
+			G22c <= 1'b0;
+
 			if (Enter)
 			begin
 				if (!player)
@@ -254,6 +324,17 @@ begin
 		end
 		G01:
 		begin
+			/* UPDATE CURSOR */
+			G00c <= 1'b0;
+			G10c <= 1'b0;
+			G20c <= 1'b0;
+			G01c <= 1'b1;
+			G11c <= 1'b0;
+			G21c <= 1'b0;
+			G02c <= 1'b0;
+			G12c <= 1'b0;
+			G22c <= 1'b0;
+
 			if (Enter)
 			begin
 				if (!player)
@@ -268,6 +349,17 @@ begin
 		end
 		G11:
 		begin
+			/* UPDATE CURSOR */
+			G00c <= 1'b0;
+			G10c <= 1'b0;
+			G20c <= 1'b0;
+			G01c <= 1'b0;
+			G11c <= 1'b1;
+			G21c <= 1'b0;
+			G02c <= 1'b0;
+			G12c <= 1'b0;
+			G22c <= 1'b0;
+
 			if (Enter)
 			begin
 				if (!player)
@@ -282,6 +374,17 @@ begin
 		end
 		G21:
 		begin
+			/* UPDATE CURSOR */
+			G00c <= 1'b0;
+			G10c <= 1'b0;
+			G20c <= 1'b0;
+			G01c <= 1'b0;
+			G11c <= 1'b0;
+			G21c <= 1'b1;
+			G02c <= 1'b0;
+			G12c <= 1'b0;
+			G22c <= 1'b0;
+
 			if (Enter)
 			begin
 				if (!player)
@@ -296,6 +399,17 @@ begin
 		end
 		G02:
 		begin
+			/* UPDATE CURSOR */
+			G00c <= 1'b0;
+			G10c <= 1'b0;
+			G20c <= 1'b0;
+			G01c <= 1'b0;
+			G11c <= 1'b0;
+			G21c <= 1'b0;
+			G02c <= 1'b1;
+			G12c <= 1'b0;
+			G22c <= 1'b0;
+
 			if (Enter)
 			begin
 				if (!player)
@@ -310,6 +424,17 @@ begin
 		end
 		G12:
 		begin
+			/* UPDATE CURSOR */
+			G00c <= 1'b0;
+			G10c <= 1'b0;
+			G20c <= 1'b0;
+			G01c <= 1'b0;
+			G11c <= 1'b0;
+			G21c <= 1'b0;
+			G02c <= 1'b0;
+			G12c <= 1'b1;
+			G22c <= 1'b0;
+
 			if (Enter)
 			begin
 				if (!player)
@@ -324,6 +449,17 @@ begin
 		end
 		G22:
 		begin
+			/* UPDATE CURSOR */
+			G00c <= 1'b0;
+			G10c <= 1'b0;
+			G20c <= 1'b0;
+			G01c <= 1'b0;
+			G11c <= 1'b0;
+			G21c <= 1'b0;
+			G02c <= 1'b0;
+			G12c <= 1'b0;
+			G22c <= 1'b1;
+
 			if (Enter)
 			begin
 				if (!player)
