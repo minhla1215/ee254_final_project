@@ -1,23 +1,4 @@
 `timescale 1ns / 1ps
-///////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date:    17:04:04 11/12/2014 
-// Design Name: 
-// Module Name:    final_project_top 
-// Project Name: 
-// Target Devices: 
-// Tool versions: 
-// Description: 
-//
-// Dependencies: 
-//
-// Revision: 
-// Revision 0.01 - File Created
-// Additional Comments: 
-//
-///////////////////////////////////////////////////////////////////////////
 module final_project_top(
 	vga_h_sync, vga_v_sync, vga_r, vga_g, vga_b,
 	MemOE, MemWR, RamCS, FlashCS, QuadSpiFlashCS, 

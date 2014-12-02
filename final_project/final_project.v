@@ -39,57 +39,57 @@ begin
 		p1Win <= 1'b0;
 		p2Win <= 1'b0;
 		draw <= 1'b0;
-		for(i = 0; i < 9; i = i + 1)
+		for (i = 0; i < 9; i = i + 1)
 		begin
 			mapBoard[i] <= 0;
 		end
 	end
 	else
 	begin
-		case(state)
+		case (state)
 		INITIAL:
 		begin
-			if(Start)
+			if (Start)
 				state <= CHECK;
 		end
 		CHECK:
 		begin
-			if(Left)
+			if (Left)
 			begin
-				if(location == 4'b0000)
+				if (location == 4'b0000)
 					location <= 4'b1000;
 				else
 					location <= location - 1;
 			end
-			if(Right)
+			if (Right)
 			begin
-				if(location == 4'b1000)
+				if (location == 4'b1000)
 				   	location <= 4'b0000;
 				else
 				    location <= location + 1;
 			end
-			if(Enter)
+			if (Enter)
 			begin
-				if(!player) 
+				if (!player) 
 				// player=0 is player1, player=1 is player2
 					mapBoard[location] = 1;
 				else
 					mapBoard[location] = 2;
 								
 				gameOver = 1'b0;
-				for(i = 0; i < 3; i = i + 1)
+				for (i = 0; i < 3; i = i + 1)
 				begin
-					if(mapBoard[i * 3 + 0] 
+					if (mapBoard[i * 3 + 0] 
 						== mapBoard[i * 3 + 1] && 
 						mapBoard[i * 3 + 1] 
 						== mapBoard[i * 3 + 2])
 					begin
-						if(mapBoard[i * 3 + 0] == 1)
+						if (mapBoard[i * 3 + 0] == 1)
 						begin
 							gameOver = 1'b1;
 							state <= P1WIN;
 						end
-						if(mapBoard[i * 3 + 0] == 2)
+						if (mapBoard[i * 3 + 0] == 2)
 						begin
 							gameOver = 1'b1;
 							state <= P2WIN;
@@ -97,48 +97,48 @@ begin
 					end
 				end
 						
-				for(i = 0; i < 3; i = i + 1)
+				for (i = 0; i < 3; i = i + 1)
 				begin
-					if(mapBoard[0 + i] == mapBoard[3 + i] 
+					if (mapBoard[0 + i] == mapBoard[3 + i] 
 						&& mapBoard[3 + i] 
 						== mapBoard[6 + i])
 					begin
-						if(mapBoard[i] == 1)
+						if (mapBoard[i] == 1)
 						begin
 							gameOver = 1'b1;
 							state <= P1WIN;
 						end
-						if(mapBoard[i] == 2)
+						if (mapBoard[i] == 2)
 						begin
 							gameOver = 1'b1;
 							state <= P2WIN;
 						end
 					end
 				end
-				if(mapBoard[0] == mapBoard[4] && 
+				if (mapBoard[0] == mapBoard[4] && 
 					mapBoard[4] == mapBoard[8])
 				begin
-					if(mapBoard[0] == 1)
+					if (mapBoard[0] == 1)
 					begin
 						gameOver = 1'b1;
 						state <= P1WIN;
 					end
-					if(mapBoard[0] == 2)
+					if (mapBoard[0] == 2)
 					begin
 						gameOver = 1'b1;
 						state <= P2WIN;
 					end
 				end
 						
-				if(mapBoard[2] == mapBoard[4] && 
+				if (mapBoard[2] == mapBoard[4] && 
 					mapBoard[4] == mapBoard[6])
 				begin
-					if(mapBoard[2] == 1)
+					if (mapBoard[2] == 1)
 					begin
 						gameOver = 1'b1;
 						state <= P1WIN;
 					end
-					if(mapBoard[2] == 2)
+					if (mapBoard[2] == 2)
 					begin
 						gameOver = 1'b1;
 						state <= P2WIN;
@@ -146,13 +146,13 @@ begin
 				end
 							
 				flag = 1'b1;
-				for(i = 0; i < 9; i = i + 1)
+				for (i = 0; i < 9; i = i + 1)
 				begin
-					if(mapBoard[i] == 0)
+					if (mapBoard[i] == 0)
 						flag = 1'b0;
 				end
 						
-				if(flag && !gameOver)
+				if (flag && !gameOver)
 					state <= DRAW;
 			end
 		end
@@ -161,7 +161,7 @@ begin
 			p1Win <= 1'b1;
 			p2Win <= 1'b0;
 			draw  <= 1'b0;
-			if(Start)
+			if (Start)
 				state <= INITIAL;
 		end
 		P2WIN:
@@ -169,7 +169,7 @@ begin
 			p1Win <= 1'b0;
 			p2Win <= 1'b1;
 			draw  <= 1'b0;
-			if(Start)
+			if (Start)
 				state <= INITIAL;
 		end
 		DRAW:
@@ -177,7 +177,7 @@ begin
 			p1Win <= 1'b0;
 			p2Win <= 1'b0;
 			draw  <= 1'b1;
-			if(Start)
+			if (Start)
 	 			state <= INITIAL;
 		end
 		default:
@@ -188,17 +188,19 @@ begin
 	end
 end
 
-always @(*)
+always @ (*)
 begin
 	case ({q_Draw,q_P2_Win,q_P1_Win,q_Check,q_Initial})    
-	// Note the concatenation operator {}
-	5'b00001: state_string = "q_Initial "; 
-	5'b00010: state_string = "q_Check ";       // Fill-in the three lines
-	5'b00100: state_string = "q_P1_WIN"; 
-	5'b01000: state_string = "q_P2_WIN"; 
-	5'b10000: state_string = "q_Draw"; 
-
-
+	5'b00001: 
+		state_string = "q_Initial "; 
+	5'b00010: 
+		state_string = "q_Check ";       
+	5'b00100: 
+		state_string = "q_P1_WIN"; 
+	5'b01000: 
+		state_string = "q_P2_WIN"; 
+	5'b10000: 
+		state_string = "q_Draw"; 
 	endcase
 end
 

@@ -1,26 +1,5 @@
 `timescale 1ns / 1ps
 
-////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer:
-//
-// Create Date:   18:45:05 09/24/2014
-// Design Name:   ee254_numlock_sm
-// Module Name:   C:/Documents and Settings/Administrator/Desktop/EE254/Xilinx Lab6 Number Lock/lab6_num_lock/ee254_numlock_sm_tb.v
-// Project Name:  lab6_num_lock
-// Target Device:  
-// Tool versions:  
-// Description: 
-//
-// Verilog Test Fixture created by ISE for module: ee254_numlock_sm
-//
-// Dependencies:
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-////////////////////////////////////////////////////////////////////////////////
 
 module final_project_test;
 
@@ -43,7 +22,8 @@ module final_project_test;
 	wire p2Win;
 	wire draw;
 	
-	reg [6*8:0] state_string; // 6-character string for symbolic display of state
+	reg [6*8:0] state_string; 
+	// 6-character string for symbolic display of state
 
 
 	// Instantiate the Unit Under Test (UUT)
