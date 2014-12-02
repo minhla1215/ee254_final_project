@@ -1,33 +1,24 @@
 # Reading C:/Modeltech_pe_edu_10.3c/tcl/vsim/pref.tcl
-# do {hvsync_tb.fdo}
+# do {final_project.fdo}
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim PE Student Edition vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 14:59:30 on Nov 30,2014
-# vlog -reportprogress 300 hvsync_generator.v 
-# -- Compiling module hvsync_generator
+# Start time: 12:40:54 on Dec 02,2014
+# vlog -reportprogress 300 final_project.v 
+# -- Compiling module final_project
 # 
 # Top level modules:
-# 	hvsync_generator
-# End time: 14:59:30 on Nov 30,2014, Elapsed time: 0:00:00
+# 	final_project
+# End time: 12:40:54 on Dec 02,2014, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 14:59:30 on Nov 30,2014
-# vlog -reportprogress 300 hvsync_generator_tb.v 
-# -- Compiling module hvsync_tb
-# 
-# Top level modules:
-# 	hvsync_tb
-# End time: 14:59:30 on Nov 30,2014, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim PE Student Edition vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 14:59:30 on Nov 30,2014
+# Start time: 12:40:54 on Dec 02,2014
 # vlog -reportprogress 300 C:/Xilinx/13.2/ISE_DS/ISE/verilog/src/glbl.v 
 # -- Compiling module glbl
 # 
 # Top level modules:
 # 	glbl
-# End time: 14:59:30 on Nov 30,2014, Elapsed time: 0:00:00
+# End time: 12:40:54 on Dec 02,2014, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # //  ModelSim PE Student Edition 10.3c Jul 19 2014 
 # //
@@ -42,34 +33,62 @@
 # // THE ModelSim PE Student Edition IS NOT A SUPPORTED PRODUCT.
 # // FOR HIGHER EDUCATION PURPOSES ONLY
 # //
-# vsim -gui -do "do {hvsync_tb.fdo}" 
-# Start time: 14:59:30 on Nov 30,2014
-# Loading work.hvsync_tb
-# ** Error: (vsim-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
-# 
-# No such file or directory. (errno = ENOENT)
-# ** Error: (vsim-19) Failed to access library 'unisims_ver' at "unisims_ver".
-# 
-# No such file or directory. (errno = ENOENT)
-# ** Error: (vsim-19) Failed to access library 'secureip' at "secureip".
-# 
-# No such file or directory. (errno = ENOENT)
-# Loading work.hvsync_generator
+# vsim -gui -do "do {final_project.fdo}" 
+# Start time: 12:40:55 on Dec 02,2014
+# Loading work.final_project
 # Loading work.glbl
-# ** Warning: (vsim-3015) hvsync_generator_tb.v(25): [PCDPC] - Port size (10) does not match connection size (9) for port 'CounterY'. The port definition is at: hvsync_generator.v(14).
-# 
-#         Region: /hvsync_tb/UUT
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
 #           File in use by: Administrator  Hostname: NATHANTIMPK25B5  ProcessID: 3892
 # 
-#           Attempting to use alternate WLF file "./wlftik2whc".
+#           Attempting to use alternate WLF file "./wlftka5xmj".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlftik2whc
+#           Using alternate file: ./wlftka5xmj
 # 
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# End time: 14:59:41 on Nov 30,2014, Elapsed time: 0:00:11
-# Errors: 3, Warnings: 3
+do final_project.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim PE Student Edition vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 12:41:03 on Dec 02,2014
+# vlog -reportprogress 300 "+acc" final_project.v 
+# -- Compiling module final_project
+# ** Note: (vlog-143) Recognized 1 FSM in module "final_project(verilog)".
+# 
+# 
+# Top level modules:
+# 	final_project
+# End time: 12:41:03 on Dec 02,2014, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 12:41:03 on Dec 02,2014
+# vlog -reportprogress 300 "+acc" final_project_test.v 
+# -- Compiling module final_project_test
+# 
+# Top level modules:
+# 	final_project_test
+# End time: 12:41:03 on Dec 02,2014, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 12:41:04 on Dec 02,2014
+# Loading work.final_project_test
+# Loading work.final_project
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Administrator  Hostname: NATHANTIMPK25B5  ProcessID: 3892
+# 
+#           Attempting to use alternate WLF file "./wlftzse63f".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftzse63f
+# 
+# ** Error: (vish-4014) No objects found matching '/final_project_test/location'.
+# Executing ONERROR command at macro ./final_project_wave.do line 17
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# End time: 13:55:51 on Dec 02,2014, Elapsed time: 1:14:47
+# Errors: 3, Warnings: 2

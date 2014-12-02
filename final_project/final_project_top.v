@@ -10,7 +10,7 @@ module final_project_top(
 	BtnC,                              
 	// the center button (this is our reset in most of our designs)
 	Sw0,
-	//Ld4, Ld3, Ld2, Ld1, Ld0, 			
+	Ld3, Ld2, Ld1, Ld0, 			
 	// 5 LEDs
 	An3, An2, An1, An0,			       
 	// 4 anodes
@@ -33,7 +33,7 @@ input Sw0;
 output MemOE, MemWR, RamCS, FlashCS, QuadSpiFlashCS;
 // Project Specific Outputs
 // LEDs
-//output 	Ld0, Ld1, Ld2, Ld3, Ld4;
+output 	Ld0, Ld1, Ld2, Ld3;
 // SSD Outputs
 output Cg, Cf, Ce, Cd, Cc, Cb, Ca, Dp;
 output An0, An1, An2, An3;
@@ -54,11 +54,12 @@ wire Left, Right;
 wire Enter;
 wire player;
 wire p1Win, p2Win, draw;
+wire[3:0] loc;
 	
 		
-wire q_Initial, q_Check, q_P1_Win, q_P2_Win, q_Draw;
+wire q_Initial, q_Clear, q_Check, q_P1_Win, q_P2_Win, q_Draw;
 reg[4:0] state;
-assign {q_Draw, q_P2_Win, q_P1_Win, q_Check, q_Initial} = state;
+assign {q_Draw, q_P2_Win, q_P1_Win, q_Clear, q_Check, q_Initial} = state;
 		
 wire q_G00, q_G10, q_G20, q_G01, q_G11, q_G21, q_G02, q_G12, q_G22;
 		
@@ -80,7 +81,7 @@ begin
 		DIV_CLK <= DIV_CLK + 1'b1;
 end
 
-assign	sys_clk = DIV_CLK[25];
+assign	sys_clk = DIV_CLK[24];
 	
 //INPUT INTO STATE MACHINE
 assign {Left, Right, Start, Reset, Enter} = {BtnL, BtnR, BtnD, BtnU, BtnC};
@@ -96,15 +97,17 @@ final_project fp(
 	.Enter(Enter),
 	.q_Initial(q_Initial),
 	.q_Check(q_Check),
+	.q_Clear(q_Clear),
 	.q_P1_Win(q_P1_Win),
 	.q_P2_Win(q_P2_Win),
 	.q_Draw(q_Draw),
 	.player(player),
 	.p1Win(p1Win),
 	.p2Win(p2Win),
-	.draw(draw)
+	.draw(draw),
+	.location(loc)
 );
-	
+
 	
 //------------VGA MODULE--------------
 reg[8:0] displayState;
@@ -219,241 +222,288 @@ wire B = (G00Area && G00b) || (G10Area && G10b) || (G20Area && G20b)
 	|| (G01Area && G01b) || (G11Area && G11b) || (G21Area && G21b)
 	|| (G02Area && G02b) || (G12Area && G12b) || (G22Area && G22b);
 
-always @(posedge DIV_CLK[21])
+always @(posedge sys_clk, posedge Reset)
 begin
 	(* full_case, parallel_case *)
 	if (Reset)
+	begin
 		displayState <= G00;
+		G00b <= 1'b0;
+		G00g <= 1'b0;
+		G10b <= 1'b0;
+		G10g <= 1'b0;
+		G20b <= 1'b0;
+		G20g <= 1'b0;
+		G01b <= 1'b0;
+		G01g <= 1'b0;
+		G11b <= 1'b0;
+		G11g <= 1'b0;
+		G21b <= 1'b0;
+		G21g <= 1'b0;
+		G02b <= 1'b0;
+		G02g <= 1'b0;
+		G12b <= 1'b0;
+		G12g <= 1'b0;
+		G22b <= 1'b0;
+		G22g <= 1'b0;
+	end
 	else
 	begin
-
-		case (displayState)
-		G00:
+		if(Start && (p1Win || p2Win || draw))
 		begin
-			/* UPDATE CURSOR */
-			G00c <= 1'b1;
-			G10c <= 1'b0;
-			G20c <= 1'b0;
-			G01c <= 1'b0;
-			G11c <= 1'b0;
-			G21c <= 1'b0;
-			G02c <= 1'b0;
-			G12c <= 1'b0;
-			G22c <= 1'b0;
-
-			if (Enter)
-			begin
-				if (!player)
-					G00g <= 1'b1;
-				else
-					G00b <= 1'b1;
-			end
-			if (Left)
-				displayState <= G22;
-			if (Right)
-				displayState <= G10;
+			displayState <= G00;
+			G00b <= 1'b0;
+			G00g <= 1'b0;
+			G10b <= 1'b0;
+			G10g <= 1'b0;
+			G20b <= 1'b0;
+			G20g <= 1'b0;
+			G01b <= 1'b0;
+			G01g <= 1'b0;
+			G11b <= 1'b0;
+			G11g <= 1'b0;
+			G21b <= 1'b0;
+			G21g <= 1'b0;
+			G02b <= 1'b0;
+			G02g <= 1'b0;
+			G12b <= 1'b0;
+			G12g <= 1'b0;
+			G22b <= 1'b0;
+			G22g <= 1'b0;
 		end
-		G10:
+		if(p1Win || p2Win || draw)
 		begin
-			/* UPDATE CURSOR */
-			G00c <= 1'b0;
-			G10c <= 1'b1;
-			G20c <= 1'b0;
-			G01c <= 1'b0;
-			G11c <= 1'b0;
-			G21c <= 1'b0;
-			G02c <= 1'b0;
-			G12c <= 1'b0;
-			G22c <= 1'b0;
-
-			if (Enter)
-			begin
-				if (!player)
-					G10g <= 1'b1;
-				else
-					G10b <= 1'b1;
-			end
-			if (Left)
-				displayState <= G00;
-			if (Right)
-				displayState <= G20;
 		end
-		G20:
+		else
 		begin
-			/* UPDATE CURSOR */
-			G00c <= 1'b0;
-			G10c <= 1'b0;
-			G20c <= 1'b1;
-			G01c <= 1'b0;
-			G11c <= 1'b0;
-			G21c <= 1'b0;
-			G02c <= 1'b0;
-			G12c <= 1'b0;
-			G22c <= 1'b0;
-
-			if (Enter)
+			case (displayState)
+			G00:
 			begin
-				if (!player)
-					G20g <= 1'b1;
-				else
-					G20b <= 1'b1;
-			end
-			if (Left)
-				displayState <= G10;
-			if (Right)
-				displayState <= G01;
-		end
-		G01:
-		begin
-			/* UPDATE CURSOR */
-			G00c <= 1'b0;
-			G10c <= 1'b0;
-			G20c <= 1'b0;
-			G01c <= 1'b1;
-			G11c <= 1'b0;
-			G21c <= 1'b0;
-			G02c <= 1'b0;
-			G12c <= 1'b0;
-			G22c <= 1'b0;
+				/* UPDATE CURSOR */
+				G00c <= 1'b1;
+				G10c <= 1'b0;
+				G20c <= 1'b0;
+				G01c <= 1'b0;
+				G11c <= 1'b0;
+				G21c <= 1'b0;
+				G02c <= 1'b0;
+				G12c <= 1'b0;
+				G22c <= 1'b0;
 
-			if (Enter)
-			begin
-				if (!player)
-					G01g <= 1'b1;
-				else
-					G01b <= 1'b1;
+				if (Enter)
+				begin
+					if (!player)
+						G00g <= 1'b1;
+					else
+						G00b <= 1'b1;
+				end
+				if (Left)
+					displayState <= G22;
+				if (Right)
+					displayState <= G10;
 			end
-			if (Left)
-				displayState <= G20;
-			if (Right)
-				displayState <= G11;
-		end
-		G11:
-		begin
-			/* UPDATE CURSOR */
-			G00c <= 1'b0;
-			G10c <= 1'b0;
-			G20c <= 1'b0;
-			G01c <= 1'b0;
-			G11c <= 1'b1;
-			G21c <= 1'b0;
-			G02c <= 1'b0;
-			G12c <= 1'b0;
-			G22c <= 1'b0;
+			G10:
+			begin
+				/* UPDATE CURSOR */
+				G00c <= 1'b0;
+				G10c <= 1'b1;
+				G20c <= 1'b0;
+				G01c <= 1'b0;
+				G11c <= 1'b0;
+				G21c <= 1'b0;
+				G02c <= 1'b0;
+				G12c <= 1'b0;
+				G22c <= 1'b0;
 
-			if (Enter)
-			begin
-				if (!player)
-					G11g <= 1'b1;
-				else
-					G11b <= 1'b1;
+				if (Enter)
+				begin
+					if (!player)
+						G10g <= 1'b1;
+					else
+						G10b <= 1'b1;
+				end
+				if (Left)
+					displayState <= G00;
+				if (Right)
+					displayState <= G20;
 			end
-			if (Left)
-				displayState <= G01;
-			if (Right)
-				displayState <= G21;
-		end
-		G21:
-		begin
-			/* UPDATE CURSOR */
-			G00c <= 1'b0;
-			G10c <= 1'b0;
-			G20c <= 1'b0;
-			G01c <= 1'b0;
-			G11c <= 1'b0;
-			G21c <= 1'b1;
-			G02c <= 1'b0;
-			G12c <= 1'b0;
-			G22c <= 1'b0;
+			G20:
+			begin
+				/* UPDATE CURSOR */
+				G00c <= 1'b0;
+				G10c <= 1'b0;
+				G20c <= 1'b1;
+				G01c <= 1'b0;
+				G11c <= 1'b0;
+				G21c <= 1'b0;
+				G02c <= 1'b0;
+				G12c <= 1'b0;
+				G22c <= 1'b0;
 
-			if (Enter)
-			begin
-				if (!player)
-					G21g <= 1'b1;
-				else
-					G21b <= 1'b1;
+				if (Enter)
+				begin
+					if (!player)
+						G20g <= 1'b1;
+					else
+						G20b <= 1'b1;
+				end
+				if (Left)
+					displayState <= G10;
+				if (Right)
+					displayState <= G01;
 			end
-			if (Left)
-				displayState <= G11;
-			if (Right)
-				displayState <= G02;
-		end
-		G02:
-		begin
-			/* UPDATE CURSOR */
-			G00c <= 1'b0;
-			G10c <= 1'b0;
-			G20c <= 1'b0;
-			G01c <= 1'b0;
-			G11c <= 1'b0;
-			G21c <= 1'b0;
-			G02c <= 1'b1;
-			G12c <= 1'b0;
-			G22c <= 1'b0;
+			G01:
+			begin
+				/* UPDATE CURSOR */
+				G00c <= 1'b0;
+				G10c <= 1'b0;
+				G20c <= 1'b0;
+				G01c <= 1'b1;
+				G11c <= 1'b0;
+				G21c <= 1'b0;
+				G02c <= 1'b0;
+				G12c <= 1'b0;
+				G22c <= 1'b0;
 
-			if (Enter)
-			begin
-				if (!player)
-					G02g <= 1'b1;
-				else
-					G02b <= 1'b1;
+				if (Enter)
+				begin
+					if (!player)
+						G01g <= 1'b1;
+					else
+						G01b <= 1'b1;
+				end
+				if (Left)
+					displayState <= G20;
+				if (Right)
+					displayState <= G11;
 			end
-			if (Left)
-				displayState <= G21;
-			if (Right)
-				displayState <= G12;
-		end
-		G12:
-		begin
-			/* UPDATE CURSOR */
-			G00c <= 1'b0;
-			G10c <= 1'b0;
-			G20c <= 1'b0;
-			G01c <= 1'b0;
-			G11c <= 1'b0;
-			G21c <= 1'b0;
-			G02c <= 1'b0;
-			G12c <= 1'b1;
-			G22c <= 1'b0;
+			G11:
+			begin
+				/* UPDATE CURSOR */
+				G00c <= 1'b0;
+				G10c <= 1'b0;
+				G20c <= 1'b0;
+				G01c <= 1'b0;
+				G11c <= 1'b1;
+				G21c <= 1'b0;
+				G02c <= 1'b0;
+				G12c <= 1'b0;
+				G22c <= 1'b0;
 
-			if (Enter)
-			begin
-				if (!player)
-					G12g <= 1'b1;
-				else
-					G12b <= 1'b1;
+				if (Enter)
+				begin
+					if (!player)
+						G11g <= 1'b1;
+					else
+						G11b <= 1'b1;
+				end
+				if (Left)
+					displayState <= G01;
+				if (Right)
+					displayState <= G21;
 			end
-			if (Left)
-				displayState <= G02;
-			if (Right)
-				displayState <= G22;
-		end
-		G22:
-		begin
-			/* UPDATE CURSOR */
-			G00c <= 1'b0;
-			G10c <= 1'b0;
-			G20c <= 1'b0;
-			G01c <= 1'b0;
-			G11c <= 1'b0;
-			G21c <= 1'b0;
-			G02c <= 1'b0;
-			G12c <= 1'b0;
-			G22c <= 1'b1;
+			G21:
+			begin
+				/* UPDATE CURSOR */
+				G00c <= 1'b0;
+				G10c <= 1'b0;
+				G20c <= 1'b0;
+				G01c <= 1'b0;
+				G11c <= 1'b0;
+				G21c <= 1'b1;
+				G02c <= 1'b0;
+				G12c <= 1'b0;
+				G22c <= 1'b0;
 
-			if (Enter)
-			begin
-				if (!player)
-					G22g <= 1'b1;
-				else
-					G22b <= 1'b1;
+				if (Enter)
+				begin
+					if (!player)
+						G21g <= 1'b1;
+					else
+						G21b <= 1'b1;
+				end
+				if (Left)
+					displayState <= G11;
+				if (Right)
+					displayState <= G02;
 			end
-			if (Left)
-				displayState <= G12;
-			if (Right)
-				displayState <= G00;
+			G02:
+			begin
+				/* UPDATE CURSOR */
+				G00c <= 1'b0;
+				G10c <= 1'b0;
+				G20c <= 1'b0;
+				G01c <= 1'b0;
+				G11c <= 1'b0;
+				G21c <= 1'b0;
+				G02c <= 1'b1;
+				G12c <= 1'b0;
+				G22c <= 1'b0;
+
+				if (Enter)
+				begin
+					if (!player)
+						G02g <= 1'b1;
+					else
+						G02b <= 1'b1;
+				end
+				if (Left)
+					displayState <= G21;
+				if (Right)
+					displayState <= G12;
+			end
+			G12:
+			begin
+				/* UPDATE CURSOR */
+				G00c <= 1'b0;
+				G10c <= 1'b0;
+				G20c <= 1'b0;
+				G01c <= 1'b0;
+				G11c <= 1'b0;
+				G21c <= 1'b0;
+				G02c <= 1'b0;
+				G12c <= 1'b1;
+				G22c <= 1'b0;
+
+				if (Enter)
+				begin
+					if (!player)
+						G12g <= 1'b1;
+					else
+						G12b <= 1'b1;
+				end
+				if (Left)
+					displayState <= G02;
+				if (Right)
+					displayState <= G22;
+			end
+			G22:
+			begin
+				/* UPDATE CURSOR */
+				G00c <= 1'b0;
+				G10c <= 1'b0;
+				G20c <= 1'b0;
+				G01c <= 1'b0;
+				G11c <= 1'b0;
+				G21c <= 1'b0;
+				G02c <= 1'b0;
+				G12c <= 1'b0;
+				G22c <= 1'b1;
+
+				if (Enter)
+				begin
+					if (!player)
+						G22g <= 1'b1;
+					else
+						G22b <= 1'b1;
+				end
+				if (Left)
+					displayState <= G12;
+				if (Right)
+					displayState <= G00;
+			end
+			endcase
 		end
-		endcase
 	end
 end
 
@@ -466,6 +516,7 @@ end
 	
 //------------PLAYER DISPLAY----------
 //assign {Ld4,Ld3, Ld2, Ld1, Ld0} = {BtnL, BtnR, BtnD, BtnU, BtnC}; 
+assign {Ld3, Ld2, Ld1, Ld0} = {loc[3], loc[2], loc[1], loc[0]}; 
 assign SSD0 = player;
 assign SSD1 = draw;
 assign SSD2 = p2Win;
@@ -476,7 +527,7 @@ assign An0 = !(~(ssdscan_clk[1]) && ~(ssdscan_clk[0]));
 // when ssdscan_clk = 00
 assign An1 = !(~(ssdscan_clk[1]) &&  (ssdscan_clk[0]));  
 // when ssdscan_clk = 01
-assign An2i = !((ssdscan_clk[1]) && ~(ssdscan_clk[0]));  
+assign An2 = !((ssdscan_clk[1]) && ~(ssdscan_clk[0]));  
 // when ssdscan_clk = 10
 assign An3 = !((ssdscan_clk[1]) &&  (ssdscan_clk[0]));  
 // when ssdscan_clk = 11

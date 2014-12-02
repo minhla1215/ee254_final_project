@@ -4,13 +4,13 @@ Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: final_project_top.prj
 
@@ -118,31 +118,35 @@ Parsing module <final_project_top>.
 =========================================================================
 
 Elaborating module <final_project_top>.
-WARNING:HDLCompiler:1127 - "A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 75: Assignment to q_Initial ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 62: Assignment to q_Initial ignored, since the identifier is never used
 
 Elaborating module <BUFGP>.
 
 Elaborating module <final_project>.
-WARNING:HDLCompiler:413 - "A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 62: Result of 32-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 69: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 67: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 74: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 161: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:295 - "A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 180: case condition never applies
 WARNING:HDLCompiler:1511 - "A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 15: Mix of blocking and non-blocking assignments to variable <gameOver> is not a recommended coding practice.
 WARNING:HDLCompiler:1511 - "A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 10: Mix of blocking and non-blocking assignments to variable <mapBoard> is not a recommended coding practice.
-WARNING:HDLCompiler:413 - "A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 195: Result of 79-bit expression is truncated to fit in 49-bit target.
-WARNING:HDLCompiler:413 - "A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 196: Result of 63-bit expression is truncated to fit in 49-bit target.
-WARNING:HDLCompiler:413 - "A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 197: Result of 63-bit expression is truncated to fit in 49-bit target.
-WARNING:HDLCompiler:413 - "A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 198: Result of 63-bit expression is truncated to fit in 49-bit target.
-WARNING:HDLCompiler:1127 - "A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 109: Assignment to q_Initial ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 110: Assignment to q_Check ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 111: Assignment to q_P1_Win ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 112: Assignment to q_P2_Win ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 113: Assignment to q_Draw ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 123: Assignment to q_G22 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 137: Assignment to button_clk ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 200: Result of 71-bit expression is truncated to fit in 49-bit target.
+WARNING:HDLCompiler:413 - "A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 202: Result of 55-bit expression is truncated to fit in 49-bit target.
+WARNING:HDLCompiler:413 - "A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 204: Result of 55-bit expression is truncated to fit in 49-bit target.
+WARNING:HDLCompiler:413 - "A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 206: Result of 63-bit expression is truncated to fit in 49-bit target.
+WARNING:HDLCompiler:413 - "A:\Documents\Github\ee254_final_project\final_project\final_project.v" Line 208: Result of 63-bit expression is truncated to fit in 49-bit target.
+WARNING:HDLCompiler:1127 - "A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 98: Assignment to q_Initial ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 99: Assignment to q_Check ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 100: Assignment to q_Clear ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 101: Assignment to q_P1_Win ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 102: Assignment to q_P2_Win ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 103: Assignment to q_Draw ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 114: Assignment to q_G22 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 128: Assignment to button_clk ignored, since the identifier is never used
 
 Elaborating module <hvsync_generator>.
 WARNING:HDLCompiler:413 - "A:\Documents\Github\ee254_final_project\final_project\hvsync_generator.v" Line 35: Result of 11-bit expression is truncated to fit in 10-bit target.
 WARNING:HDLCompiler:413 - "A:\Documents\Github\ee254_final_project\final_project\hvsync_generator.v" Line 45: Result of 11-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:634 - "A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 143: Net <reset> does not have a driver.
+WARNING:HDLCompiler:634 - "A:\Documents\Github\ee254_final_project\final_project\final_project_top.v" Line 135: Net <reset> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -150,81 +154,111 @@ WARNING:HDLCompiler:634 - "A:\Documents\Github\ee254_final_project\final_project
 
 Synthesizing Unit <final_project_top>.
     Related source file is "a:/documents/github/ee254_final_project/final_project/final_project_top.v".
-INFO:Xst:3210 - "a:/documents/github/ee254_final_project/final_project/final_project_top.v" line 102: Output port <q_Initial> of the instance <fp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "a:/documents/github/ee254_final_project/final_project/final_project_top.v" line 102: Output port <q_Check> of the instance <fp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "a:/documents/github/ee254_final_project/final_project/final_project_top.v" line 102: Output port <q_P1_Win> of the instance <fp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "a:/documents/github/ee254_final_project/final_project/final_project_top.v" line 102: Output port <q_P2_Win> of the instance <fp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "a:/documents/github/ee254_final_project/final_project/final_project_top.v" line 102: Output port <q_Draw> of the instance <fp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "a:/documents/github/ee254_final_project/final_project/final_project_top.v" line 91: Output port <q_Initial> of the instance <fp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "a:/documents/github/ee254_final_project/final_project/final_project_top.v" line 91: Output port <q_Check> of the instance <fp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "a:/documents/github/ee254_final_project/final_project/final_project_top.v" line 91: Output port <q_Clear> of the instance <fp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "a:/documents/github/ee254_final_project/final_project/final_project_top.v" line 91: Output port <q_P1_Win> of the instance <fp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "a:/documents/github/ee254_final_project/final_project/final_project_top.v" line 91: Output port <q_P2_Win> of the instance <fp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "a:/documents/github/ee254_final_project/final_project/final_project_top.v" line 91: Output port <q_Draw> of the instance <fp> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <reset> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit register for signal <G00b>.
+    Found 1-bit register for signal <G00g>.
+    Found 1-bit register for signal <G10b>.
+    Found 1-bit register for signal <G10g>.
+    Found 1-bit register for signal <G20b>.
+    Found 1-bit register for signal <G20g>.
+    Found 1-bit register for signal <G01b>.
+    Found 1-bit register for signal <G01g>.
+    Found 1-bit register for signal <G11b>.
+    Found 1-bit register for signal <G11g>.
+    Found 1-bit register for signal <G21b>.
+    Found 1-bit register for signal <G21g>.
+    Found 1-bit register for signal <G02b>.
+    Found 1-bit register for signal <G02g>.
+    Found 1-bit register for signal <G12b>.
+    Found 1-bit register for signal <G12g>.
+    Found 1-bit register for signal <G22b>.
+    Found 1-bit register for signal <G22g>.
     Found 27-bit register for signal <DIV_CLK>.
     Found 9-bit register for signal <displayState>.
-    Found 1-bit register for signal <tempG>.
-    Found 1-bit register for signal <tempB>.
+    Found 1-bit register for signal <G00c>.
+    Found 1-bit register for signal <G10c>.
+    Found 1-bit register for signal <G20c>.
+    Found 1-bit register for signal <G01c>.
+    Found 1-bit register for signal <G11c>.
+    Found 1-bit register for signal <G21c>.
+    Found 1-bit register for signal <G02c>.
+    Found 1-bit register for signal <G12c>.
+    Found 1-bit register for signal <G22c>.
     Found 1-bit register for signal <vga_r>.
     Found 1-bit register for signal <vga_g>.
     Found 1-bit register for signal <vga_b>.
-    Found finite state machine <FSM_0> for signal <displayState>.
-    -----------------------------------------------------------------------
-    | States             | 9                                              |
-    | Transitions        | 27                                             |
-    | Inputs             | 3                                              |
-    | Outputs            | 9                                              |
-    | Clock              | DIV_CLK<21> (rising_edge)                      |
-    | Reset              | Reset (positive)                               |
-    | Reset type         | synchronous                                    |
-    | Reset State        | 000000001                                      |
-    | Encoding           | auto                                           |
-    | Implementation     | LUT                                            |
-    -----------------------------------------------------------------------
-    Found 27-bit adder for signal <DIV_CLK[26]_GND_1_o_add_2_OUT> created at line 93.
+    Found 27-bit adder for signal <DIV_CLK[26]_GND_1_o_add_2_OUT> created at line 81.
     Found 16x8-bit Read Only RAM for signal <SSD_CATHODES>
-    Found 1-bit 4-to-1 multiplexer for signal <SSD<0>> created at line 327.
-    Found 10-bit comparator lessequal for signal <n0014> created at line 164
-    Found 10-bit comparator lessequal for signal <n0017> created at line 164
-    Found 10-bit comparator lessequal for signal <n0027> created at line 166
-    Found 10-bit comparator lessequal for signal <n0030> created at line 166
-    Found 10-bit comparator lessequal for signal <n0037> created at line 188
-    Found 10-bit comparator lessequal for signal <n0041> created at line 188
+    Found 1-bit 4-to-1 multiplexer for signal <SSD<0>> created at line 552.
+    Found 10-bit comparator lessequal for signal <n0013> created at line 143
+    Found 10-bit comparator lessequal for signal <n0016> created at line 143
+    Found 10-bit comparator lessequal for signal <n0026> created at line 145
+    Found 10-bit comparator lessequal for signal <n0029> created at line 145
+    Found 10-bit comparator lessequal for signal <n0033> created at line 175
+    Found 10-bit comparator lessequal for signal <n0037> created at line 176
+    Found 10-bit comparator lessequal for signal <n0040> created at line 177
+    Found 10-bit comparator lessequal for signal <n0042> created at line 177
+    Found 10-bit comparator lessequal for signal <n0047> created at line 179
+    Found 10-bit comparator lessequal for signal <n0052> created at line 182
+    Found 10-bit comparator lessequal for signal <n0055> created at line 182
+    Found 10-bit comparator lessequal for signal <n0062> created at line 188
+    Found 10-bit comparator lessequal for signal <n0070> created at line 194
+    Found 10-bit comparator lessequal for signal <n0072> created at line 194
+    Found 10-bit comparator lessequal for signal <n0075> created at line 195
+    Found 10-bit comparator lessequal for signal <n0078> created at line 195
+    Found 10-bit comparator lessequal for signal <n0081> created at line 196
+    Found 10-bit comparator lessequal for signal <n0083> created at line 196
+    Found 10-bit comparator lessequal for signal <n0088> created at line 198
+    Found 10-bit comparator lessequal for signal <n0090> created at line 198
+    Found 10-bit comparator lessequal for signal <n0095> created at line 201
+    Found 10-bit comparator lessequal for signal <n0098> created at line 201
+    Found 10-bit comparator lessequal for signal <n0105> created at line 207
+    Found 10-bit comparator lessequal for signal <n0108> created at line 207
     Summary:
 	inferred   1 RAM(s).
 	inferred   1 Adder/Subtractor(s).
-	inferred  32 D-type flip-flop(s).
-	inferred   6 Comparator(s).
-	inferred   1 Multiplexer(s).
-	inferred   1 Finite State Machine(s).
+	inferred  66 D-type flip-flop(s).
+	inferred  24 Comparator(s).
+	inferred  75 Multiplexer(s).
 Unit <final_project_top> synthesized.
 
 Synthesizing Unit <final_project>.
     Related source file is "a:/documents/github/ee254_final_project/final_project/final_project.v".
+    Found 5-bit register for signal <state>.
+    Found 4-bit register for signal <location>.
     Found 1-bit register for signal <p1Win>.
     Found 1-bit register for signal <p2Win>.
     Found 1-bit register for signal <draw>.
-    Found 4-bit register for signal <location>.
-    Found 18-bit register for signal <n0161[17:0]>.
-    Found 5-bit register for signal <state>.
-    Found 4-bit adder for signal <location[3]_GND_3_o_add_7_OUT> created at line 69.
-    Found 4-bit subtractor for signal <GND_3_o_GND_3_o_sub_4_OUT<3:0>> created at line 62.
-    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_32_o> created at line 82
-    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_33_o> created at line 84
-    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_39_o> created at line 82
-    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_40_o> created at line 84
-    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_46_o> created at line 82
-    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_47_o> created at line 84
-    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_53_o> created at line 102
-    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_54_o> created at line 103
-    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_60_o> created at line 102
-    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_61_o> created at line 103
-    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_67_o> created at line 102
-    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_68_o> created at line 103
-    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_74_o> created at line 118
-    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_75_o> created at line 119
-    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_81_o> created at line 133
-    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_82_o> created at line 134
+    Found 18-bit register for signal <n0164[17:0]>.
+    Found 4-bit adder for signal <location[3]_GND_3_o_add_7_OUT> created at line 74.
+    Found 4-bit subtractor for signal <GND_3_o_GND_3_o_sub_4_OUT<3:0>> created at line 67.
+    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_32_o> created at line 87
+    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_33_o> created at line 89
+    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_39_o> created at line 87
+    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_40_o> created at line 89
+    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_46_o> created at line 87
+    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_47_o> created at line 89
+    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_53_o> created at line 107
+    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_54_o> created at line 108
+    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_60_o> created at line 107
+    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_61_o> created at line 108
+    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_67_o> created at line 107
+    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_68_o> created at line 108
+    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_74_o> created at line 123
+    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_75_o> created at line 124
+    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_81_o> created at line 138
+    Found 2-bit comparator equal for signal <GND_3_o_GND_3_o_equal_82_o> created at line 139
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  30 D-type flip-flop(s).
 	inferred  16 Comparator(s).
-	inferred  75 Multiplexer(s).
+	inferred  77 Multiplexer(s).
 Unit <final_project> synthesized.
 
 Synthesizing Unit <hvsync_generator>.
@@ -256,27 +290,26 @@ Macro Statistics
  10-bit adder                                          : 2
  27-bit adder                                          : 1
  4-bit addsub                                          : 1
-# Registers                                            : 17
- 1-bit register                                        : 11
+# Registers                                            : 43
+ 1-bit register                                        : 36
  10-bit register                                       : 2
  18-bit register                                       : 1
  27-bit register                                       : 1
  4-bit register                                        : 1
  5-bit register                                        : 1
-# Comparators                                          : 26
+ 9-bit register                                        : 1
+# Comparators                                          : 44
  10-bit comparator greater                             : 4
- 10-bit comparator lessequal                           : 6
+ 10-bit comparator lessequal                           : 24
  2-bit comparator equal                                : 16
-# Multiplexers                                         : 76
- 1-bit 2-to-1 multiplexer                              : 38
+# Multiplexers                                         : 152
+ 1-bit 2-to-1 multiplexer                              : 92
  1-bit 4-to-1 multiplexer                              : 1
- 18-bit 2-to-1 multiplexer                             : 1
+ 18-bit 2-to-1 multiplexer                             : 2
  32-bit 2-to-1 multiplexer                             : 18
- 4-bit 2-to-1 multiplexer                              : 6
- 5-bit 2-to-1 multiplexer                              : 12
-# FSMs                                                 : 1
-# Xors                                                 : 2
- 1-bit xor2                                            : 2
+ 4-bit 2-to-1 multiplexer                              : 8
+ 5-bit 2-to-1 multiplexer                              : 11
+ 9-bit 2-to-1 multiplexer                              : 20
 
 =========================================================================
 INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
@@ -317,43 +350,27 @@ Macro Statistics
 # Counters                                             : 3
  10-bit up counter                                     : 2
  27-bit up counter                                     : 1
-# Registers                                            : 38
- Flip-Flops                                            : 38
-# Comparators                                          : 26
+# Registers                                            : 72
+ Flip-Flops                                            : 72
+# Comparators                                          : 44
  10-bit comparator greater                             : 4
- 10-bit comparator lessequal                           : 6
+ 10-bit comparator lessequal                           : 24
  2-bit comparator equal                                : 16
-# Multiplexers                                         : 76
- 1-bit 2-to-1 multiplexer                              : 38
+# Multiplexers                                         : 152
+ 1-bit 2-to-1 multiplexer                              : 92
  1-bit 4-to-1 multiplexer                              : 1
- 18-bit 2-to-1 multiplexer                             : 1
+ 18-bit 2-to-1 multiplexer                             : 2
  32-bit 2-to-1 multiplexer                             : 18
- 4-bit 2-to-1 multiplexer                              : 6
- 5-bit 2-to-1 multiplexer                              : 12
-# FSMs                                                 : 1
-# Xors                                                 : 2
- 1-bit xor2                                            : 2
+ 4-bit 2-to-1 multiplexer                              : 8
+ 5-bit 2-to-1 multiplexer                              : 11
+ 9-bit 2-to-1 multiplexer                              : 20
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <FSM_0> on signal <displayState[1:4]> with gray encoding.
------------------------
- State     | Encoding
------------------------
- 000000001 | 0000
- 000000010 | 0001
- 000000100 | 0011
- 000001000 | 0010
- 000010000 | 0110
- 000100000 | 0111
- 001000000 | 0101
- 010000000 | 0100
- 100000000 | 1100
------------------------
+WARNING:Xst:2677 - Node <DIV_CLK_25> of sequential type is unconnected in block <final_project_top>.
 WARNING:Xst:2677 - Node <DIV_CLK_26> of sequential type is unconnected in block <final_project_top>.
 
 Optimizing unit <final_project_top> ...
@@ -364,11 +381,11 @@ Optimizing unit <hvsync_generator> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block final_project_top, actual ratio is 2.
-FlipFlop fp/location_0 has been replicated 1 time(s)
+Found area constraint ratio of 100 (+ 5) on block final_project_top, actual ratio is 4.
+FlipFlop fp/location_0 has been replicated 2 time(s)
 FlipFlop fp/location_1 has been replicated 1 time(s)
 FlipFlop fp/location_2 has been replicated 2 time(s)
-FlipFlop fp/location_3 has been replicated 2 time(s)
+FlipFlop fp/location_3 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -376,8 +393,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 94
- Flip-Flops                                            : 94
+# Registers                                            : 123
+ Flip-Flops                                            : 123
 
 =========================================================================
 
@@ -400,33 +417,33 @@ Top Level Output File Name         : final_project_top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 286
+# BELS                             : 462
 #      GND                         : 1
-#      INV                         : 7
-#      LUT1                        : 43
-#      LUT2                        : 10
-#      LUT3                        : 8
-#      LUT4                        : 6
-#      LUT5                        : 18
-#      LUT6                        : 98
-#      MUXCY                       : 43
+#      INV                         : 6
+#      LUT1                        : 42
+#      LUT2                        : 16
+#      LUT3                        : 18
+#      LUT4                        : 20
+#      LUT5                        : 73
+#      LUT6                        : 193
+#      MUXCY                       : 42
 #      MUXF7                       : 5
 #      VCC                         : 1
-#      XORCY                       : 46
-# FlipFlops/Latches                : 94
-#      FD                          : 2
-#      FDC                         : 33
-#      FDCE                        : 28
-#      FDE                         : 2
-#      FDP                         : 1
-#      FDR                         : 18
+#      XORCY                       : 45
+# FlipFlops/Latches                : 123
+#      FD                          : 4
+#      FDC                         : 37
+#      FDCE                        : 18
+#      FDE                         : 40
+#      FDP                         : 2
+#      FDR                         : 12
 #      FDRE                        : 10
 # Clock Buffers                    : 3
 #      BUFG                        : 2
 #      BUFGP                       : 1
-# IO Buffers                       : 28
+# IO Buffers                       : 32
 #      IBUF                        : 6
-#      OBUF                        : 22
+#      OBUF                        : 26
 
 Device utilization summary:
 ---------------------------
@@ -435,20 +452,20 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              94  out of  18224     0%  
- Number of Slice LUTs:                  190  out of   9112     2%  
-    Number used as Logic:               190  out of   9112     2%  
+ Number of Slice Registers:             123  out of  18224     0%  
+ Number of Slice LUTs:                  368  out of   9112     4%  
+    Number used as Logic:               368  out of   9112     4%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    196
-   Number with an unused Flip Flop:     102  out of    196    52%  
-   Number with an unused LUT:             6  out of    196     3%  
-   Number of fully used LUT-FF pairs:    88  out of    196    44%  
-   Number of unique control sets:        14
+ Number of LUT Flip Flop pairs used:    373
+   Number with an unused Flip Flop:     250  out of    373    67%  
+   Number with an unused LUT:             5  out of    373     1%  
+   Number of fully used LUT-FF pairs:   118  out of    373    31%  
+   Number of unique control sets:        27
 
 IO Utilization: 
- Number of IOs:                          29
- Number of bonded IOBs:                  29  out of    232    12%  
+ Number of IOs:                          33
+ Number of bonded IOBs:                  33  out of    232    14%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
@@ -474,12 +491,10 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-DIV_CLK_21                         | NONE(tempG)            | 6     |
+DIV_CLK_24                         | BUFG                   | 72    |
+ClkPort                            | BUFGP                  | 25    |
 DIV_CLK_1                          | BUFG                   | 26    |
-ClkPort                            | BUFGP                  | 26    |
-DIV_CLK_25                         | BUFG                   | 36    |
 -----------------------------------+------------------------+-------+
-INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -489,74 +504,54 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 6.300ns (Maximum Frequency: 158.731MHz)
-   Minimum input arrival time before clock: 7.527ns
-   Maximum output required time after clock: 5.012ns
-   Maximum combinational path delay: 5.835ns
+   Minimum period: 6.791ns (Maximum Frequency: 147.255MHz)
+   Minimum input arrival time before clock: 8.394ns
+   Maximum output required time after clock: 5.244ns
+   Maximum combinational path delay: 6.214ns
 
 Timing Details:
 ---------------
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'DIV_CLK_21'
-  Clock period: 2.526ns (frequency: 395.945MHz)
-  Total number of paths / destination ports: 23 / 8
+Timing constraint: Default period analysis for Clock 'DIV_CLK_24'
+  Clock period: 6.791ns (frequency: 147.255MHz)
+  Total number of paths / destination ports: 7348 / 99
 -------------------------------------------------------------------------
-Delay:               2.526ns (Levels of Logic = 1)
-  Source:            displayState_FSM_FFd4 (FF)
-  Destination:       tempG (FF)
-  Source Clock:      DIV_CLK_21 rising
-  Destination Clock: DIV_CLK_21 rising
+Delay:               6.791ns (Levels of Logic = 6)
+  Source:            displayState_7 (FF)
+  Destination:       displayState_6 (FF)
+  Source Clock:      DIV_CLK_24 rising
+  Destination Clock: DIV_CLK_24 rising
 
-  Data Path: displayState_FSM_FFd4 to tempG
+  Data Path: displayState_7 to displayState_6
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              6   0.447   0.973  displayState_FSM_FFd4 (displayState_FSM_FFd4)
-     LUT6:I3->O            1   0.205   0.579  _n0205_inv1 (_n0205_inv)
-     FDE:CE                    0.322          tempG
+     FDC:C->Q              9   0.447   1.174  displayState_7 (displayState_7)
+     LUT5:I0->O           18   0.203   1.050  displayState[8]_GND_1_o_equal_114_o<8>11 (displayState[8]_GND_1_o_equal_114_o<8>1)
+     LUT5:I4->O           10   0.205   0.857  displayState[8]_PWR_1_o_equal_118_o<8>1 (displayState[8]_PWR_1_o_equal_118_o)
+     LUT4:I3->O            7   0.205   0.774  Mmux_displayState[8]_displayState[8]_mux_156_OUT2111 (Mmux_displayState[8]_displayState[8]_mux_156_OUT211)
+     LUT6:I5->O            1   0.205   0.580  Mmux_displayState[8]_displayState[8]_mux_156_OUT72 (Mmux_displayState[8]_displayState[8]_mux_156_OUT71)
+     LUT6:I5->O            1   0.205   0.580  Mmux_displayState[8]_displayState[8]_mux_156_OUT73_SW1_F (N150)
+     LUT6:I5->O            1   0.205   0.000  Mmux_displayState[8]_displayState[8]_mux_156_OUT74 (displayState[8]_displayState[8]_mux_156_OUT<6>)
+     FDC:D                     0.102          displayState_6
     ----------------------------------------
-    Total                      2.526ns (0.974ns logic, 1.552ns route)
-                                       (38.6% logic, 61.4% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'DIV_CLK_1'
-  Clock period: 4.846ns (frequency: 206.343MHz)
-  Total number of paths / destination ports: 502 / 58
--------------------------------------------------------------------------
-Delay:               4.846ns (Levels of Logic = 4)
-  Source:            syncgen/CounterX_7 (FF)
-  Destination:       vga_r (FF)
-  Source Clock:      DIV_CLK_1 rising
-  Destination Clock: DIV_CLK_1 rising
-
-  Data Path: syncgen/CounterX_7 to vga_r
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDR:C->Q              9   0.447   0.934  syncgen/CounterX_7 (syncgen/CounterX_7)
-     LUT2:I0->O            1   0.203   0.944  R_inv1 (R_inv1)
-     LUT6:I0->O            1   0.203   0.924  R_inv2 (R_inv2)
-     LUT6:I1->O            1   0.203   0.684  R_inv5 (R_inv5)
-     LUT3:I1->O            1   0.203   0.000  vga_r_rstpot (vga_r_rstpot)
-     FD:D                      0.102          vga_r
-    ----------------------------------------
-    Total                      4.846ns (1.361ns logic, 3.485ns route)
-                                       (28.1% logic, 71.9% route)
+    Total                      6.791ns (1.777ns logic, 5.014ns route)
+                                       (26.2% logic, 73.8% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'ClkPort'
-  Clock period: 2.142ns (frequency: 466.886MHz)
-  Total number of paths / destination ports: 351 / 26
+  Clock period: 2.123ns (frequency: 471.065MHz)
+  Total number of paths / destination ports: 325 / 25
 -------------------------------------------------------------------------
-Delay:               2.142ns (Levels of Logic = 27)
+Delay:               2.123ns (Levels of Logic = 26)
   Source:            DIV_CLK_0 (FF)
-  Destination:       DIV_CLK_25 (FF)
+  Destination:       DIV_CLK_24 (FF)
   Source Clock:      ClkPort rising
   Destination Clock: ClkPort rising
 
-  Data Path: DIV_CLK_0 to DIV_CLK_25
+  Data Path: DIV_CLK_0 to DIV_CLK_24
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -585,66 +580,69 @@ Delay:               2.142ns (Levels of Logic = 27)
      MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<20> (Mcount_DIV_CLK_cy<20>)
      MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<21> (Mcount_DIV_CLK_cy<21>)
      MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<22> (Mcount_DIV_CLK_cy<22>)
-     MUXCY:CI->O           1   0.019   0.000  Mcount_DIV_CLK_cy<23> (Mcount_DIV_CLK_cy<23>)
-     MUXCY:CI->O           0   0.019   0.000  Mcount_DIV_CLK_cy<24> (Mcount_DIV_CLK_cy<24>)
-     XORCY:CI->O           1   0.180   0.000  Mcount_DIV_CLK_xor<25> (Result<25>)
-     FDC:D                     0.102          DIV_CLK_25
+     MUXCY:CI->O           0   0.019   0.000  Mcount_DIV_CLK_cy<23> (Mcount_DIV_CLK_cy<23>)
+     XORCY:CI->O           1   0.180   0.000  Mcount_DIV_CLK_xor<24> (Result<24>)
+     FDC:D                     0.102          DIV_CLK_24
     ----------------------------------------
-    Total                      2.142ns (1.563ns logic, 0.579ns route)
-                                       (73.0% logic, 27.0% route)
+    Total                      2.123ns (1.544ns logic, 0.579ns route)
+                                       (72.7% logic, 27.3% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'DIV_CLK_25'
-  Clock period: 6.300ns (frequency: 158.731MHz)
-  Total number of paths / destination ports: 4928 / 64
+Timing constraint: Default period analysis for Clock 'DIV_CLK_1'
+  Clock period: 5.682ns (frequency: 175.987MHz)
+  Total number of paths / destination ports: 1219 / 58
 -------------------------------------------------------------------------
-Delay:               6.300ns (Levels of Logic = 6)
-  Source:            fp/location_2 (FF)
-  Destination:       fp/state_2 (FF)
-  Source Clock:      DIV_CLK_25 rising
-  Destination Clock: DIV_CLK_25 rising
+Delay:               5.682ns (Levels of Logic = 5)
+  Source:            syncgen/CounterX_1 (FF)
+  Destination:       vga_g (FF)
+  Source Clock:      DIV_CLK_1 rising
+  Destination Clock: DIV_CLK_1 rising
 
-  Data Path: fp/location_2 to fp/state_2
+  Data Path: syncgen/CounterX_1 to vga_g
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q            14   0.447   1.186  fp/location_2 (fp/location_2)
-     LUT6:I3->O            6   0.205   1.109  fp/Mmux_GND_3_o_GND_3_o_mux_30_OUT121 (fp/GND_3_o_GND_3_o_mux_30_OUT<3>)
-     LUT6:I0->O            5   0.203   0.962  fp/Mmux_state[4]_state[4]_mux_65_OUT311 (fp/Mmux_state[4]_state[4]_mux_65_OUT31)
-     LUT6:I2->O            3   0.203   0.651  fp/state[4]_state[4]_select_108_OUT<2>6 (fp/state[4]_state[4]_select_108_OUT<2>8)
-     LUT5:I4->O            1   0.205   0.000  fp/state[4]_state[4]_select_108_OUT<2>12_SW1_G (N36)
-     MUXF7:I1->O           1   0.140   0.684  fp/state[4]_state[4]_select_108_OUT<2>12_SW1 (N27)
-     LUT6:I4->O            1   0.203   0.000  fp/state[4]_state[4]_select_108_OUT<2>13 (fp/state[4]_state[4]_select_108_OUT<2>)
-     FDC:D                     0.102          fp/state_2
+     FDR:C->Q              9   0.447   1.194  syncgen/CounterX_1 (syncgen/CounterX_1)
+     LUT6:I0->O            1   0.203   0.580  GND_1_o_CounterX[9]_AND_55_o_SW1 (N144)
+     LUT6:I5->O            4   0.205   0.684  GND_1_o_CounterX[9]_AND_55_o (GND_1_o_CounterX[9]_AND_55_o)
+     LUT4:I3->O            2   0.205   0.845  B_inv3_SW1 (N91)
+     LUT6:I3->O            1   0.205   0.808  B_inv3 (B_inv3)
+     LUT4:I1->O            1   0.205   0.000  vga_b_rstpot (vga_b_rstpot)
+     FD:D                      0.102          vga_b
     ----------------------------------------
-    Total                      6.300ns (1.708ns logic, 4.592ns route)
-                                       (27.1% logic, 72.9% route)
+    Total                      5.682ns (1.572ns logic, 4.110ns route)
+                                       (27.7% logic, 72.3% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'DIV_CLK_21'
-  Total number of paths / destination ports: 18 / 10
+Timing constraint: Default OFFSET IN BEFORE for Clock 'DIV_CLK_24'
+  Total number of paths / destination ports: 1079 / 150
 -------------------------------------------------------------------------
-Offset:              4.337ns (Levels of Logic = 2)
-  Source:            BtnU (PAD)
-  Destination:       tempG (FF)
-  Destination Clock: DIV_CLK_21 rising
+Offset:              8.394ns (Levels of Logic = 7)
+  Source:            Sw0 (PAD)
+  Destination:       fp/state_4 (FF)
+  Destination Clock: DIV_CLK_24 rising
 
-  Data Path: BtnU to tempG
+  Data Path: Sw0 to fp/state_4
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            68   1.222   2.011  BtnU_IBUF (BtnU_IBUF)
-     LUT6:I1->O            1   0.203   0.579  _n0205_inv1 (_n0205_inv)
-     FDE:CE                    0.322          tempG
+     IBUF:I->O            49   1.222   1.898  Sw0_IBUF (Sw0_IBUF)
+     LUT6:I0->O           19   0.203   1.319  fp/Mmux_GND_3_o_GND_3_o_mux_30_OUT131 (fp/GND_3_o_GND_3_o_mux_30_OUT<4>)
+     LUT6:I2->O            4   0.203   0.788  fp/GND_3_o_GND_3_o_AND_31_o1 (fp/GND_3_o_GND_3_o_AND_31_o)
+     LUT2:I0->O            1   0.203   0.580  fp/SF14311_SW0 (N50)
+     LUT6:I5->O            1   0.205   0.580  fp/state[4]_state[4]_select_107_OUT<4>9 (fp/state[4]_state[4]_select_107_OUT<4>9)
+     LUT6:I5->O            1   0.205   0.684  fp/state[4]_state[4]_select_107_OUT<4>11 (fp/state[4]_state[4]_select_107_OUT<4>11)
+     LUT6:I4->O            1   0.203   0.000  fp/state[4]_state[4]_select_107_OUT<4>12 (fp/state[4]_state[4]_select_107_OUT<4>)
+     FDC:D                     0.102          fp/state_4
     ----------------------------------------
-    Total                      4.337ns (1.747ns logic, 2.590ns route)
-                                       (40.3% logic, 59.7% route)
+    Total                      8.394ns (2.546ns logic, 5.848ns route)
+                                       (30.3% logic, 69.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'ClkPort'
-  Total number of paths / destination ports: 26 / 26
+  Total number of paths / destination ports: 25 / 25
 -------------------------------------------------------------------------
-Offset:              3.318ns (Levels of Logic = 1)
+Offset:              3.258ns (Levels of Logic = 1)
   Source:            BtnU (PAD)
   Destination:       DIV_CLK_0 (FF)
   Destination Clock: ClkPort rising
@@ -653,35 +651,11 @@ Offset:              3.318ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            68   1.222   1.666  BtnU_IBUF (BtnU_IBUF)
+     IBUF:I->O            59   1.222   1.606  BtnU_IBUF (BtnU_IBUF)
      FDC:CLR                   0.430          DIV_CLK_0
     ----------------------------------------
-    Total                      3.318ns (1.652ns logic, 1.666ns route)
-                                       (49.8% logic, 50.2% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'DIV_CLK_25'
-  Total number of paths / destination ports: 1031 / 97
--------------------------------------------------------------------------
-Offset:              7.527ns (Levels of Logic = 6)
-  Source:            Sw0 (PAD)
-  Destination:       fp/state_3 (FF)
-  Destination Clock: DIV_CLK_25 rising
-
-  Data Path: Sw0 to fp/state_3
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            23   1.222   1.518  Sw0_IBUF (Sw0_IBUF)
-     LUT6:I0->O           11   0.203   1.227  fp/Mmux_GND_3_o_GND_3_o_mux_30_OUT91 (fp/GND_3_o_GND_3_o_mux_30_OUT<17>)
-     LUT6:I1->O           12   0.203   0.909  fp/GND_3_o_GND_3_o_AND_37_o1 (fp/GND_3_o_GND_3_o_AND_37_o)
-     LUT5:I4->O            2   0.205   0.721  fp/state[4]_state[4]_select_108_OUT<3>7 (fp/state[4]_state[4]_select_108_OUT<3>7)
-     LUT6:I4->O            1   0.203   0.808  fp/state[4]_state[4]_select_108_OUT<3>11_SW0 (N23)
-     LUT6:I3->O            1   0.205   0.000  fp/state[4]_state[4]_select_108_OUT<3>12 (fp/state[4]_state[4]_select_108_OUT<3>)
-     FDC:D                     0.102          fp/state_3
-    ----------------------------------------
-    Total                      7.527ns (2.343ns logic, 5.184ns route)
-                                       (31.1% logic, 68.9% route)
+    Total                      3.258ns (1.652ns logic, 1.606ns route)
+                                       (50.7% logic, 49.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'DIV_CLK_1'
@@ -704,6 +678,26 @@ Offset:              4.382ns (Levels of Logic = 2)
                                        (73.6% logic, 26.4% route)
 
 =========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'DIV_CLK_24'
+  Total number of paths / destination ports: 16 / 8
+-------------------------------------------------------------------------
+Offset:              5.244ns (Levels of Logic = 2)
+  Source:            fp/draw (FF)
+  Destination:       Ca (PAD)
+  Source Clock:      DIV_CLK_24 rising
+
+  Data Path: fp/draw to Ca
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             20   0.447   1.340  fp/draw (fp/draw)
+     LUT6:I2->O            4   0.203   0.683  Mmux_SSD<0>11 (Ca_OBUF)
+     OBUF:I->O                 2.571          Ca_OBUF (Ca)
+    ----------------------------------------
+    Total                      5.244ns (3.221ns logic, 2.023ns route)
+                                       (61.4% logic, 38.6% route)
+
+=========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'ClkPort'
   Total number of paths / destination ports: 16 / 8
 -------------------------------------------------------------------------
@@ -724,30 +718,10 @@ Offset:              5.012ns (Levels of Logic = 2)
                                        (64.3% logic, 35.7% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'DIV_CLK_25'
-  Total number of paths / destination ports: 12 / 4
--------------------------------------------------------------------------
-Offset:              4.768ns (Levels of Logic = 2)
-  Source:            fp/draw (FF)
-  Destination:       Ca (PAD)
-  Source Clock:      DIV_CLK_25 rising
-
-  Data Path: fp/draw to Ca
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC:C->Q              2   0.447   0.864  fp/draw (fp/draw)
-     LUT6:I2->O            4   0.203   0.683  Mmux_SSD<0>11 (Ca_OBUF)
-     OBUF:I->O                 2.571          Ca_OBUF (Ca)
-    ----------------------------------------
-    Total                      4.768ns (3.221ns logic, 1.547ns route)
-                                       (67.6% logic, 32.4% route)
-
-=========================================================================
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 4 / 4
 -------------------------------------------------------------------------
-Delay:               5.835ns (Levels of Logic = 3)
+Delay:               6.214ns (Levels of Logic = 3)
   Source:            Sw0 (PAD)
   Destination:       Ca (PAD)
 
@@ -755,12 +729,12 @@ Delay:               5.835ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            23   1.222   1.154  Sw0_IBUF (Sw0_IBUF)
+     IBUF:I->O            49   1.222   1.534  Sw0_IBUF (Sw0_IBUF)
      LUT6:I5->O            4   0.205   0.683  Mmux_SSD<0>11 (Ca_OBUF)
      OBUF:I->O                 2.571          Ca_OBUF (Ca)
     ----------------------------------------
-    Total                      5.835ns (3.998ns logic, 1.837ns route)
-                                       (68.5% logic, 31.5% route)
+    Total                      6.214ns (3.998ns logic, 2.216ns route)
+                                       (64.3% logic, 35.7% route)
 
 =========================================================================
 
@@ -772,7 +746,7 @@ Clock to Setup on destination clock ClkPort
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-ClkPort        |    2.142|         |         |         |
+ClkPort        |    2.123|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock DIV_CLK_1
@@ -780,38 +754,29 @@ Clock to Setup on destination clock DIV_CLK_1
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-DIV_CLK_1      |    4.846|         |         |         |
-DIV_CLK_21     |    2.278|         |         |         |
+DIV_CLK_1      |    5.682|         |         |         |
+DIV_CLK_24     |    3.596|         |         |         |
 ---------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock DIV_CLK_21
+Clock to Setup on destination clock DIV_CLK_24
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-DIV_CLK_1      |    4.767|         |         |         |
-DIV_CLK_21     |    2.526|         |         |         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock DIV_CLK_25
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-DIV_CLK_25     |    6.300|         |         |         |
+DIV_CLK_24     |    6.791|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 10.14 secs
+Total CPU time to Xst completion: 10.24 secs
  
 --> 
 
-Total memory usage is 246476 kilobytes
+Total memory usage is 247244 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   21 (   0 filtered)
+Number of warnings :   26 (   0 filtered)
 Number of infos    :    8 (   0 filtered)
 

@@ -1,27 +1,28 @@
 `timescale 1ns / 1ps
-module final_project(Clk, Left, Right, Start, Reset, Enter, q_Initial, q_Check, q_P1_Win, q_P2_Win, q_Draw, player, p1Win, p2Win, draw);
+module final_project(Clk, Left, Right, Start, Reset, Enter, q_Initial, q_Check, q_Clear, q_P1_Win, q_P2_Win, q_Draw, player, p1Win, p2Win, draw, location);
 
 input Clk, Left, Right, Start, Reset, Enter;
 input player;
-output q_Initial, q_Check, q_P1_Win, q_P2_Win, q_Draw;
+output q_Initial, q_Check, q_Clear, q_P1_Win, q_P2_Win, q_Draw;
 output reg p1Win, p2Win, draw;
 
 
 reg [1:0] mapBoard [8:0];
 
 reg [4:0] state;
-assign {q_Draw, q_P2_Win, q_P1_Win, q_Check, q_Initial} = state;
+assign {q_Draw, q_P2_Win, q_P1_Win, q_Clear, q_Check, q_Initial} = state;
 
 reg gameOver, flag;
 integer i;
-reg [3:0] location;
+output reg [3:0] location;
 
 localparam
-INITIAL = 5'b00001,
-CHECK   = 5'b00010,
-P1WIN   = 5'b00100,
-P2WIN   = 5'b01000,
-DRAW    = 5'b10000;
+INITIAL = 6'b000001,
+CHECK   = 6'b000010,
+CLEAR   = 6'b000100,
+P1WIN   = 6'b001000,
+P2WIN   = 6'b010000,
+DRAW    = 6'b100000;
 
 
 reg [6*8:0] state_string; 
@@ -34,15 +35,6 @@ begin
 	if(Reset)
 	begin
 		state <= INITIAL;
-		gameOver <= 1'b0;
-		location <= 4'b0000;
-		p1Win <= 1'b0;
-		p2Win <= 1'b0;
-		draw <= 1'b0;
-		for (i = 0; i < 9; i = i + 1)
-		begin
-			mapBoard[i] <= 0;
-		end
 	end
 	else
 	begin
@@ -50,7 +42,20 @@ begin
 		INITIAL:
 		begin
 			if (Start)
-				state <= CHECK;
+				state <= CLEAR;
+		end
+		CLEAR:
+		begin
+			gameOver <= 1'b0;
+			location <= 4'b0000;
+			p1Win <= 1'b0;
+			p2Win <= 1'b0;
+			draw <= 1'b0;
+			for (i = 0; i < 9; i = i + 1)
+			begin
+				mapBoard[i] <= 0;
+			end
+			state <= CHECK;
 		end
 		CHECK:
 		begin
@@ -162,7 +167,7 @@ begin
 			p2Win <= 1'b0;
 			draw  <= 1'b0;
 			if (Start)
-				state <= INITIAL;
+				state <= CLEAR;
 		end
 		P2WIN:
 		begin
@@ -170,7 +175,7 @@ begin
 			p2Win <= 1'b1;
 			draw  <= 1'b0;
 			if (Start)
-				state <= INITIAL;
+				state <= CLEAR;
 		end
 		DRAW:
 		begin
@@ -178,7 +183,7 @@ begin
 			p2Win <= 1'b0;
 			draw  <= 1'b1;
 			if (Start)
-	 			state <= INITIAL;
+	 			state <= CLEAR;
 		end
 		default:
 		begin
@@ -190,16 +195,18 @@ end
 
 always @ (*)
 begin
-	case ({q_Draw,q_P2_Win,q_P1_Win,q_Check,q_Initial})    
-	5'b00001: 
-		state_string = "q_Initial "; 
-	5'b00010: 
-		state_string = "q_Check ";       
-	5'b00100: 
+	case ({q_Draw,q_P2_Win,q_P1_Win,q_Clear, q_Check,q_Initial})    
+	6'b000001: 
+		state_string = "q_Initial"; 
+	6'b000010: 
+		state_string = "q_Check"; 
+	6'b000100: 
+		state_string = "q_Clear"; 
+	6'b001000: 
 		state_string = "q_P1_WIN"; 
-	5'b01000: 
+	6'b010000: 
 		state_string = "q_P2_WIN"; 
-	5'b10000: 
+	6'b100000: 
 		state_string = "q_Draw"; 
 	endcase
 end
